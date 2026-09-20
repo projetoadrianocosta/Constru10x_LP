@@ -1,0 +1,6 @@
+{
+  "name": "Imersão Constru10x - Adriano Costa",
+  "description": "Página de vendas de alta conversão para o evento online do Engenheiro Adriano Costa: como construir com qualidade, segurança e custo baixo aumentando o faturamento em até 10x.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
