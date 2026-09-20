@@ -32,7 +32,6 @@ import {
   TESTIMONIALS, 
   FAQS 
 } from './data/eventData';
-import { CountdownTimer } from './components/CountdownTimer';
 import { EditableImage } from './components/EditableImage';
 import { RevenueCalculator } from './components/RevenueCalculator';
 import { BonusModal } from './components/BonusModal';
@@ -55,58 +54,9 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#090b0e] text-[#F3F4F6] relative selection:bg-amber-400 selection:text-slate-950">
-      
-      {/* 1. TOP SCARCITY TICKER */}
-      <div className="bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 text-slate-950 py-2.5 px-4 font-bold text-xs sm:text-sm text-center shadow-lg relative z-30">
-        <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-2 sm:gap-4">
-          <span className="flex items-center gap-1.5 uppercase tracking-wider text-[11px] sm:text-xs font-black">
-            <Flame className="w-4 h-4 text-slate-950 fill-slate-950 animate-bounce" />
-            1º LOTE EXCLUSIVO ABERTO • APENAS R$ 79,90 À VISTA
-          </span>
-          <span className="hidden md:inline text-slate-950/50">|</span>
-          <span className="text-xs font-medium">
-            Imersão 100% Online no Zoom dia <strong>07 de Novembro de 2026</strong> (10h às 17h)
-          </span>
-          <span className="hidden lg:inline text-slate-950/50">|</span>
-          <span className="text-[11px] font-bold text-slate-950 bg-black/10 px-2 py-0.5 rounded">
-            + 3 Aulas de Acesso Imediato
-          </span>
-        </div>
-      </div>
 
-      {/* 2. DIRECT RESPONSE HEADER (NO INTERACTIVE NAVIGATION MENU) */}
-      <header className="sticky top-0 z-30 bg-[#090b0e]/95 border-b border-slate-800/80 backdrop-blur-xl">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-blue-600 flex items-center justify-center font-black text-slate-950 text-base shadow-md">
-              10X
-            </div>
-            <div>
-              <span className="font-extrabold text-sm sm:text-base tracking-tight text-white block leading-none">
-                ADRIANO COSTA
-              </span>
-              <span className="text-[10px] sm:text-xs text-amber-400 font-semibold tracking-widest uppercase">
-                Imersão Constru 10x
-              </span>
-            </div>
-          </div>
-
-          <div>
-            <button
-              type="button"
-              onClick={handleOpenCheckout}
-              id="header-cta-button"
-              className="px-4 sm:px-5 py-2.5 bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-xs uppercase tracking-wider rounded-xl shadow-md transition-all hover:scale-105 active:scale-95 flex items-center gap-1.5"
-            >
-              <span>Garantir Vaga</span>
-              <span className="hidden sm:inline">• R$ 79,90</span>
-            </button>
-          </div>
-        </div>
-      </header>
-
-      {/* 3. HERO SECTION (HIGH CONVERSION DIRECT RESPONSE) */}
-      <section className="relative pt-8 pb-16 sm:pt-14 sm:pb-24 overflow-hidden bg-radial-gradient">
+      {/* HERO SECTION (HIGH CONVERSION DIRECT RESPONSE) */}
+      <section className="relative pt-10 pb-16 sm:pt-16 sm:pb-24 overflow-hidden bg-radial-gradient">
         <div className="absolute inset-0 bg-grid-pattern opacity-40 pointer-events-none" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -114,10 +64,10 @@ export default function App() {
             
             {/* Left Column: Direct Response Copy */}
             <div className="lg:col-span-7 text-center lg:text-left">
-              {/* Urgency Eyebrow Badge */}
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-bold uppercase tracking-wider mb-5 backdrop-blur-sm">
-                <Flame className="w-3.5 h-3.5 text-amber-400 fill-amber-400" />
-                <span>Virada de lote em breve (82% das vagas preenchidas)</span>
+              {/* Category Eyebrow Badge */}
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/60 border border-blue-500/40 text-blue-300 text-xs font-bold uppercase tracking-wider mb-5 backdrop-blur-sm">
+                <Building2 className="w-3.5 h-3.5 text-blue-400" />
+                <span>Imersão Online para Engenheiros, Arquitetos e Construtores</span>
               </div>
 
               {/* Main Headline with ONLY Blue and Yellow accents */}
@@ -127,7 +77,7 @@ export default function App() {
 
               {/* Core Promise Subtitle with Constru 10x */}
               <p className="text-base sm:text-lg md:text-xl text-slate-300 font-medium leading-relaxed mb-6 max-w-2xl mx-auto lg:mx-0">
-                Te mostro como construir com qualidade, segurança e custo baixo — e como o método <strong className="text-amber-400 font-bold">Constru 10x</strong> multiplica em até 10x o seu faturamento, construindo melhor e gastando menos.
+                Na imersão <strong className="text-amber-400 font-bold">Constru10x</strong>, você vai aprender como construir com qualidade, segurança e custo baixo - e como multiplicar em 10x o seu faturamento com o método que já fechou mais de <strong className="text-white font-bold">560 mil em contratos</strong>.
               </p>
 
               {/* Key Event Badges Grid */}
@@ -177,7 +127,7 @@ export default function App() {
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-xs text-slate-400">
                 <span className="flex items-center gap-1.5 text-amber-300 font-semibold">
                   <Flame className="w-4 h-4 text-amber-400 fill-amber-400" />
-                  1º Lote encerra em 7 dias (subirá para o 2º Lote)
+                  82% das vagas preenchidas (subindo de lote em breve)
                 </span>
                 <span className="hidden sm:inline text-slate-700">•</span>
                 <span className="flex items-center gap-1.5 text-slate-300">
@@ -187,10 +137,10 @@ export default function App() {
               </div>
             </div>
 
-            {/* Right Column: Hero Visual & Countdown */}
+            {/* Right Column: Hero Visual */}
             <div className="lg:col-span-5 flex flex-col items-center">
               {/* Editable Photo Container */}
-              <div className="w-full max-w-sm sm:max-w-md mb-6">
+              <div className="w-full max-w-sm sm:max-w-md">
                 <EditableImage
                   id="hero-adriano"
                   defaultLabel="Eng. Adriano Costa no Canteiro de Obras"
@@ -198,12 +148,6 @@ export default function App() {
                   className="shadow-2xl border-2 border-amber-500/30"
                 />
               </div>
-
-              {/* Countdown Ticker for Lote 1 */}
-              <CountdownTimer
-                targetDate={EVENT_DETAILS.lot1DeadlineDate}
-                headline="1º LOTE ENCERRA EM 7 DIAS:"
-              />
             </div>
 
           </div>
