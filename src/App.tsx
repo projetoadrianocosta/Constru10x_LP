@@ -208,7 +208,7 @@ export default function App() {
 
               <div className="lg:col-span-8">
                 <h3 className="text-2xl sm:text-3xl font-black text-white mb-3 leading-tight">
-                  Como Adriano saiu de uma cidade de 40k hab para gerar <span className="text-amber-400">R$ 560.000 em contratos</span> com ROI de 35x
+                  Saiu de uma cidade de 40 mil habitantes para gerar <span className="text-amber-400">R$ 560.000 em contratos</span> com ROI de 35x
                 </h3>
                 <p className="text-sm sm:text-base text-slate-300 leading-relaxed mb-6">
                   Sem escritório físico e apenas <strong className="text-white">R$ 16.000</strong> investidos em microeventos e posicionamento no digital, fechou <strong className="text-amber-400 font-bold">+R$ 560.000 em contratos</strong> de gestão e consultoria de obras.
@@ -506,9 +506,6 @@ export default function App() {
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight">
               GARANTA SEU INGRESSO AGORA
             </h2>
-            <p className="text-slate-400 text-sm sm:text-base mt-2">
-              O primeiro lote encerra em 7 dias após o início da campanha. Depois disso, o valor subirá automaticamente.
-            </p>
           </div>
 
           {/* Central 1st Lot Card */}
@@ -529,7 +526,7 @@ export default function App() {
               </div>
               <div className="inline-flex items-center gap-2 mt-3 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-bold">
                 <Flame className="w-3.5 h-3.5 text-amber-400 fill-amber-400" />
-                <span>Virada de lote em 7 dias (subirá para o 2º Lote)</span>
+                <span>Virada de lote em poucas horas</span>
               </div>
             </div>
 

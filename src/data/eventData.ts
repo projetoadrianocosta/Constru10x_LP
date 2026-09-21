@@ -135,10 +135,6 @@ export const TESTIMONIALS: TestimonialCase[] = [
 
 export const FAQS: FAQItem[] = [
   {
-    question: "Como e quando recebo o acesso às 3 Aulas Bônus?",
-    answer: "Assim que seu pagamento do ingresso (1º Lote por R$ 79,90 à vista) for confirmado, você recebe imediatamente no seu e-mail e WhatsApp o link de acesso exclusivo às 3 aulas de pré-lançamento para começar a assistir agora mesmo.",
-  },
-  {
     question: "O evento vai ficar gravado ou terá replay?",
     answer: "NÃO. Esta imersão é um dia intensivo 100% online no Zoom, no dia 07 de Novembro de 2026, das 10h às 17h (Horário de Brasília). O compromisso ao vivo faz toda a diferença para absorver o método Constru 10x sem distrações.",
   },
@@ -153,9 +149,5 @@ export const FAQS: FAQItem[] = [
   {
     question: "Como funciona a garantia incondicional de risco zero?",
     answer: "Eu confio tanto no que vou te ensinar que, se você participar da Imersão, assistir às três aulas, e mesmo assim achar que não valeu à pena eu devolvo o seu dinheiro! Basta me enviar uma mensagem pedindo o seu reembolso. Simples assim.",
-  },
-  {
-    question: "Por quanto tempo o valor de R$ 79,90 estará disponível?",
-    answer: "O 1º Lote encerra 7 dias após o início da campanha. Assim que atingir o prazo ou o limite de vagas, o valor subirá automaticamente para o 2º Lote.",
   },
 ];

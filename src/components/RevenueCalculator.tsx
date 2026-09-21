@@ -35,7 +35,7 @@ export const RevenueCalculator: React.FC<RevenueCalculatorProps> = ({ onCtaClick
             Descubra Quanto Dinheiro Você Está <span className="text-amber-400">Deixando na Mesa</span>
           </h3>
           <p className="text-slate-400 text-sm sm:text-base mt-2">
-            Veja a comparação entre continuar cobrando por "projeto isolado" vs. se posicionar com o método de qualidade, segurança e economia de obra.
+            Veja a comparação entre continuar cobrando por projeto isolado VS. a metodologia Constru10x.
           </p>
         </div>
 
