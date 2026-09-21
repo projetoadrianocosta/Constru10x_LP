@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   CheckCircle2, 
   XCircle, 
@@ -38,11 +38,16 @@ import { BonusModal } from './components/BonusModal';
 import { CheckoutModal } from './components/CheckoutModal';
 import { FloatingCTA } from './components/FloatingCTA';
 import { PreLaunchClass } from './types';
+import { initTracking, trackEvent } from './utils/pixel';
 
 export default function App() {
   const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
   const [selectedBonus, setSelectedBonus] = useState<PreLaunchClass | null>(null);
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
+
+  useEffect(() => {
+    initTracking();
+  }, []);
 
   const toggleFaq = (index: number) => {
     setOpenFaqIndex(openFaqIndex === index ? null : index);
@@ -50,6 +55,12 @@ export default function App() {
 
   const handleOpenCheckout = () => {
     setIsCheckoutOpen(true);
+    trackEvent('InitiateCheckout', {
+      value: 79.90,
+      currency: 'BRL',
+      content_name: 'Ingresso Imersão Constru 10x',
+      content_category: 'Imersão'
+    });
   };
 
   return (
@@ -687,6 +698,7 @@ export default function App() {
         isOpen={isCheckoutOpen}
         onClose={() => setIsCheckoutOpen(false)}
       />
+
 
     </div>
   );

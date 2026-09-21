@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { X, ShieldCheck, QrCode, CreditCard, Sparkles, CheckCircle, ArrowRight, Lock, Clock } from 'lucide-react';
 import { TICKET_LOTS, EVENT_DETAILS } from '../data/eventData';
+import { trackEvent } from '../utils/pixel';
 
 interface CheckoutModalProps {
   isOpen: boolean;
@@ -49,6 +50,19 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({ isOpen, onClose })
     setTimeout(() => {
       setIsSubmitting(false);
       setIsSuccess(true);
+      trackEvent('Lead', {
+        value: 79.90,
+        currency: 'BRL',
+        name: formData.name,
+        email: formData.email,
+        profession: formData.profession
+      });
+      trackEvent('Purchase', {
+        value: 79.90,
+        currency: 'BRL',
+        content_name: 'Ingresso Imersão Constru 10x',
+        payment_method: paymentMethod
+      });
     }, 1200);
   };
 
