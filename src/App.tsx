@@ -56,203 +56,128 @@ export default function App() {
     <div className="min-h-screen bg-[#090b0e] text-[#F3F4F6] relative selection:bg-amber-400 selection:text-slate-950">
 
       {/* HERO SECTION (HIGH CONVERSION DIRECT RESPONSE) */}
-      <section className="relative pt-10 pb-16 sm:pt-16 sm:pb-24 overflow-hidden bg-radial-gradient">
+      <section className="relative pt-12 pb-16 sm:pt-20 sm:pb-24 overflow-hidden bg-radial-gradient">
         <div className="absolute inset-0 bg-grid-pattern opacity-40 pointer-events-none" />
         
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-            
-            {/* Left Column: Direct Response Copy */}
-            <div className="lg:col-span-7 text-center lg:text-left">
-              {/* Category Eyebrow Badge */}
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/60 border border-blue-500/40 text-blue-300 text-xs font-bold uppercase tracking-wider mb-5 backdrop-blur-sm">
-                <Building2 className="w-3.5 h-3.5 text-blue-400" />
-                <span>Imersão Online para Engenheiros, Arquitetos e Construtores</span>
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center flex flex-col items-center">
+          {/* Category Eyebrow Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-950/60 border border-blue-500/40 text-blue-300 font-bold uppercase tracking-wider mb-6 backdrop-blur-sm">
+            <Building2 className="w-4 h-4 text-blue-400" />
+            <span className="text-[12px]">Imersão Online para Engenheiros, Arquitetos e Construtores</span>
+          </div>
+
+          {/* Main Headline with ONLY Blue and Yellow accents */}
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[53.4px] font-black text-white leading-[1.14] tracking-tight mb-6 max-w-4xl mx-auto">
+            ESTÁ NA HORA DE PARAR DE <span className="text-white">COBRAR PELO QUE FAZ</span> E SER ESCOLHIDO PELO <span className="text-amber-400">VALOR QUE ENTREGA</span>.
+          </h1>
+
+          {/* Core Promise Subtitle with Constru 10x */}
+          <p className="text-base sm:text-lg md:text-xl text-slate-300 font-medium leading-relaxed mb-8 max-w-3xl mx-auto">
+            Na imersão <strong className="text-amber-400 font-bold">Constru10x</strong>, você vai aprender como construir com qualidade, segurança e custo baixo - e como multiplicar em 10x o seu faturamento com o método que já fechou mais de <strong className="text-white font-bold">560 mil em contratos</strong>.
+          </p>
+
+          {/* Key Event Badges Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 mb-8 max-w-2xl w-full mx-auto text-center">
+            <div className="p-4 rounded-xl bg-[#12161f] border border-slate-800 flex flex-col items-center justify-center">
+              <div className="flex items-center justify-center gap-2 text-amber-400 text-xs font-bold uppercase mb-1">
+                <Calendar className="w-4 h-4" />
+                <span>Data Marcada</span>
               </div>
-
-              {/* Main Headline with ONLY Blue and Yellow accents */}
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[2.9rem] font-black text-white leading-[1.14] tracking-tight mb-5">
-                ESTÁ NA HORA DE PARAR DE <span className="text-white">COBRAR PELO QUE FAZ</span> E SER ESCOLHIDO PELO <span className="text-amber-400">VALOR QUE ENTREGA</span>.
-              </h1>
-
-              {/* Core Promise Subtitle with Constru 10x */}
-              <p className="text-base sm:text-lg md:text-xl text-slate-300 font-medium leading-relaxed mb-6 max-w-2xl mx-auto lg:mx-0">
-                Na imersão <strong className="text-amber-400 font-bold">Constru10x</strong>, você vai aprender como construir com qualidade, segurança e custo baixo - e como multiplicar em 10x o seu faturamento com o método que já fechou mais de <strong className="text-white font-bold">560 mil em contratos</strong>.
-              </p>
-
-              {/* Key Event Badges Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8 max-w-xl mx-auto lg:mx-0 text-left">
-                <div className="p-3.5 rounded-xl bg-[#12161f] border border-slate-800">
-                  <div className="flex items-center gap-2 text-amber-400 text-xs font-bold uppercase mb-1">
-                    <Calendar className="w-4 h-4" />
-                    <span>Data Marcada</span>
-                  </div>
-                  <span className="text-sm font-extrabold text-white block">07 de Novembro de 2026</span>
-                  <span className="text-[11px] text-slate-400">Sábado</span>
-                </div>
-
-                <div className="p-3.5 rounded-xl bg-[#12161f] border border-slate-800">
-                  <div className="flex items-center gap-2 text-blue-400 text-xs font-bold uppercase mb-1">
-                    <Clock className="w-4 h-4" />
-                    <span>Horário</span>
-                  </div>
-                  <span className="text-sm font-extrabold text-white block">10h às 17h</span>
-                  <span className="text-[11px] text-slate-400">100% Online no Zoom</span>
-                </div>
-
-                <div className="p-3.5 rounded-xl bg-[#12161f] border border-slate-800">
-                  <div className="flex items-center gap-2 text-amber-400 text-xs font-bold uppercase mb-1">
-                    <Sparkles className="w-4 h-4" />
-                    <span>Bônus Imediato</span>
-                  </div>
-                  <span className="text-sm font-extrabold text-white block">3 Aulas Liberadas</span>
-                  <span className="text-[11px] text-slate-400">Acesso na confirmação</span>
-                </div>
-              </div>
-
-              {/* Big CTA Group */}
-              <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start mb-5">
-                <button
-                  type="button"
-                  onClick={handleOpenCheckout}
-                  id="hero-cta-button"
-                  className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-slate-950 font-black text-base sm:text-lg uppercase tracking-wider rounded-2xl shadow-xl shadow-amber-500/25 transition-all hover:scale-105 active:scale-95 flex items-center justify-center gap-3 animate-pulse-glow"
-                >
-                  <span>GARANTIR INGRESSO • 1º LOTE R$ 79,90 À VISTA</span>
-                  <ArrowRight className="w-5 h-5 text-slate-950" />
-                </button>
-              </div>
-
-              {/* Urgency subtext */}
-              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-xs text-slate-400">
-                <span className="flex items-center gap-1.5 text-amber-300 font-semibold">
-                  <Flame className="w-4 h-4 text-amber-400 fill-amber-400" />
-                  82% das vagas preenchidas (subindo de lote em breve)
-                </span>
-                <span className="hidden sm:inline text-slate-700">•</span>
-                <span className="flex items-center gap-1.5 text-slate-300">
-                  <ShieldCheck className="w-4 h-4 text-emerald-400" />
-                  Garantia Incondicional Risco Zero
-                </span>
-              </div>
+              <span className="text-sm font-extrabold text-white block">07 de Novembro de 2026</span>
+              <span className="text-[11px] text-slate-400">Sábado</span>
             </div>
 
-            {/* Right Column: Hero Visual */}
-            <div className="lg:col-span-5 flex flex-col items-center">
-              {/* Editable Photo Container */}
-              <div className="w-full max-w-sm sm:max-w-md">
-                <EditableImage
-                  id="hero-adriano"
-                  defaultLabel="Eng. Adriano Costa no Canteiro de Obras"
-                  aspectRatio="portrait"
-                  className="shadow-2xl border-2 border-amber-500/30"
-                />
+            <div className="p-4 rounded-xl bg-[#12161f] border border-slate-800 flex flex-col items-center justify-center">
+              <div className="flex items-center justify-center gap-2 text-[#ffb900] text-xs font-bold uppercase mb-1">
+                <Clock className="w-4 h-4 text-[#ffb900]" />
+                <span className="text-[#ffb900]">Horário</span>
               </div>
+              <span className="text-sm font-extrabold text-white block">10h às 17h</span>
+              <span className="text-[11px] text-slate-400">100% Online no Zoom</span>
             </div>
 
+            <div className="p-4 rounded-xl bg-[#12161f] border border-slate-800 flex flex-col items-center justify-center">
+              <div className="flex items-center justify-center gap-2 text-amber-400 text-xs font-bold uppercase mb-1">
+                <Sparkles className="w-4 h-4" />
+                <span>Bônus Imediato</span>
+              </div>
+              <span className="text-sm font-extrabold text-white block">3 Aulas Liberadas</span>
+              <span className="text-[11px] text-slate-400">Acesso na confirmação</span>
+            </div>
+          </div>
+
+          {/* Big CTA Group */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-5 w-full">
+            <button
+              type="button"
+              onClick={handleOpenCheckout}
+              id="hero-cta-button"
+              className="w-full sm:w-auto px-10 py-4 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-slate-950 font-black text-base sm:text-lg uppercase tracking-wider rounded-2xl shadow-xl shadow-amber-500/25 transition-all hover:scale-105 active:scale-95 flex items-center justify-center gap-3 animate-pulse-glow"
+            >
+              <span>Quero participar da Imersão por R$79,90</span>
+              <ArrowRight className="w-5 h-5 text-slate-950" />
+            </button>
+          </div>
+
+          {/* Urgency subtext */}
+          <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-slate-400 text-center">
+            <span className="flex items-center gap-1.5 text-amber-300 font-semibold">
+              <Flame className="w-4 h-4 text-amber-400 fill-amber-400" />
+              82% das vagas preenchidas (subindo de lote em breve)
+            </span>
+            <span className="hidden sm:inline text-slate-700">•</span>
+            <span className="flex items-center gap-1.5 text-slate-300">
+              <ShieldCheck className="w-4 h-4 text-emerald-400" />
+              Garantia Incondicional Risco Zero
+            </span>
           </div>
         </div>
       </section>
 
-      {/* 4. SECTION: SIM, A IMERSÃO É PARA VOCÊ vs NÃO É PARA */}
+      {/* 4. SECTION: SIM, A IMERSÃO É PARA VOCÊ */}
       <section id="para-quem-e" className="py-16 sm:py-24 bg-[#0d1017] border-y border-slate-800 relative">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-14">
-            <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight">
-              ESTA IMERSÃO É PARA VOCÊ?
-            </h2>
-            <p className="text-slate-400 text-sm sm:text-base mt-2">
-              Um dia intensivo desenhado cirurgicamente para quem quer parar de brigar por migalhas e construir uma operação de alto valor.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-            {/* For Who: GREEN */}
-            <div className="bg-[#121620] border-2 border-emerald-500/40 rounded-3xl p-6 sm:p-8 shadow-xl relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl pointer-events-none" />
+          <div className="max-w-3xl mx-auto">
+            {/* For Who: AMBER */}
+            <div className="bg-[#121620] border-2 border-amber-500/40 rounded-3xl p-6 sm:p-8 shadow-xl relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-2xl pointer-events-none" />
               
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold">
+                <div className="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold">
                   <Check className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="text-lg sm:text-xl font-black text-white">SIM, É EXATAMENTE PARA VOCÊ QUE:</h3>
-                  <span className="text-xs text-emerald-400 font-semibold">Engenheiros, Arquitetos e Construtores</span>
+                  <h3 className="text-[30px] font-black text-white leading-tight">A IMERSÃO É PARA VOCÊ QUE</h3>
+                  <span className="text-[14px] text-amber-400 font-semibold">Engenheiros, Arquitetos e Construtores</span>
                 </div>
               </div>
 
               <ul className="space-y-4 text-xs sm:text-sm text-slate-200">
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
-                  <span><strong>Quer sair da guerra predatória de preços:</strong> Cansado de enviar propostas técnicas detalhadas e ver o cliente fechar com quem cobra metade só para ter dor de cabeça depois.</span>
+                  <CheckCircle2 className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
+                  <span><strong>Quer sair da guerra dos preços</strong>, ser mais valorizado e ter mais tempo com a família.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
-                  <span><strong>Quer aplicar o método Constru 10x:</strong> Dominar como construir com qualidade, segurança e custo baixo, gerando economia real de obra que justifica honorários até 10x maiores.</span>
+                  <CheckCircle2 className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
+                  <span><strong>Profissionais que querem faturar 10x mais no próximo ano</strong>, trabalha com obra, projeto ou os dois e quer parar de enriquecer o patrão.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
                   <span><strong>Faz tudo sozinho e não sobra tempo:</strong> Técnico de manhã, orçamentista à tarde e financeiro à noite, precisando migrar urgentemente para uma postura comercial estratégica.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
                   <span><strong>Vive no ciclo montanha-russa da indicação:</strong> Um mês fecha contrato bom, no seguinte a agenda zera e você entra em ansiedade por não ter um processo previsível de captação.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
                   <span><strong>Quer atender clientes de médio e alto padrão:</strong> Fechar negócios com quem paga pelo valor, tranquilidade e inteligência construtiva, e não pela tabela mais barata.</span>
                 </li>
               </ul>
             </div>
-
-            {/* Not For Who: RED */}
-            <div className="bg-[#121620] border-2 border-red-500/30 rounded-3xl p-6 sm:p-8 shadow-xl relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-red-500/10 rounded-full blur-2xl pointer-events-none" />
-              
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 rounded-xl bg-red-500/20 text-red-400 flex items-center justify-center font-bold">
-                  <XCircle className="w-6 h-6" />
-                </div>
-                <div>
-                  <h3 className="text-lg sm:text-xl font-black text-white">ESTE EVENTO NÃO É PARA:</h3>
-                  <span className="text-xs text-red-400 font-semibold">Quem não tem perfil para o método</span>
-                </div>
-              </div>
-
-              <ul className="space-y-4 text-xs sm:text-sm text-slate-300">
-                <li className="flex items-start gap-3">
-                  <XCircle className="w-5 h-5 text-red-400 shrink-0 mt-0.5" />
-                  <span><strong>Quem procura atalhos mágicos ou dinheiro fácil:</strong> O método Constru 10x exige aplicação séria, técnica apurada e disciplina nas reuniões e no canteiro.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <XCircle className="w-5 h-5 text-red-400 shrink-0 mt-0.5" />
-                  <span><strong>Quem não é ensinável:</strong> Profissionais que acham que já sabem tudo e se recusam a mudar a forma como apresentam propostas e negociam com o cliente.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <XCircle className="w-5 h-5 text-red-400 shrink-0 mt-0.5" />
-                  <span><strong>Quem prefere reclamar da crise e da cidade:</strong> Se você prefere culpar a economia em vez de assumir as rédeas do seu posicionamento, poupe seus R$ 79,90.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <XCircle className="w-5 h-5 text-red-400 shrink-0 mt-0.5" />
-                  <span><strong>Quem não tem comprometimento com a própria carreira:</strong> A imersão é um dia intensivo focado em ação prática, feito para quem decide agir agora.</span>
-                </li>
-              </ul>
-            </div>
           </div>
 
-          {/* Quick CTA banner */}
-          <div className="mt-10 p-6 rounded-2xl bg-gradient-to-r from-blue-950/40 via-[#151a24] to-blue-950/40 border border-blue-500/30 text-center">
-            <p className="text-sm text-slate-300 mb-3">
-              Se você se identificou com a ambição de multiplicar seus resultados com o método Constru 10x:
-            </p>
-            <button
-              type="button"
-              onClick={handleOpenCheckout}
-              className="px-6 py-3 bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-xs sm:text-sm uppercase tracking-wider rounded-xl shadow-lg transition-all hover:scale-105"
-            >
-              Garantir Meu Lugar no 1º Lote (R$ 79,90 à vista)
-            </button>
-          </div>
+
         </div>
       </section>
 
@@ -260,15 +185,9 @@ export default function App() {
       <section id="resultados" className="py-16 sm:py-24 bg-[#090b0e] relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-14">
-            <span className="text-xs font-black uppercase tracking-widest text-amber-400 bg-amber-500/10 px-3.5 py-1 rounded-full border border-amber-500/30 mb-3 inline-block">
-              Validação no Campo de Batalha
-            </span>
             <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight">
               O RESULTADO QUE VOCÊ PODE ALCANÇAR
             </h2>
-            <p className="text-slate-400 text-sm sm:text-base mt-2">
-              Resultados reais de quem saiu da briga de preços e aplicou o método do Eng. Adriano Costa.
-            </p>
           </div>
 
           {/* Big Adriano Case Box */}
@@ -288,15 +207,11 @@ export default function App() {
               </div>
 
               <div className="lg:col-span-8">
-                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-400/10 text-amber-400 text-xs font-black uppercase tracking-wider mb-3">
-                  <TrendingUp className="w-3.5 h-3.5" />
-                  Case Principal de Escala
-                </div>
                 <h3 className="text-2xl sm:text-3xl font-black text-white mb-3 leading-tight">
                   Como Adriano saiu de uma cidade de 40k hab para gerar <span className="text-amber-400">R$ 560.000 em contratos</span> com ROI de 35x
                 </h3>
-                <p className="text-sm text-slate-300 leading-relaxed mb-6">
-                  "Na minha cidade, se eu cobrasse R$ 5.000 num projeto de 150m², o cliente me mandava passear. Eu não tinha escritório físico em BH e não morava lá. Fiz a conta matemática: 6 milhões de habitantes na Grande BH e proporcionalmente muito menos profissionais por habitante do que no interior. Com apenas <strong>R$ 16.000 investidos em microeventos e posicionamento</strong>, fechei <strong>R$ 560.000 em contratos</strong> de gestão e consultoria de obras."
+                <p className="text-sm sm:text-base text-slate-300 leading-relaxed mb-6">
+                  Sem escritório físico e apenas <strong className="text-white">R$ 16.000</strong> investidos em microeventos e posicionamento no digital, fechou <strong className="text-amber-400 font-bold">+R$ 560.000 em contratos</strong> de gestão e consultoria de obras.
                 </p>
 
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center font-mono">
@@ -473,9 +388,6 @@ export default function App() {
       <section id="bonus-imediatos" className="py-16 sm:py-24 bg-[#090b0e] relative">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-14">
-            <span className="text-xs font-black uppercase tracking-widest text-amber-400 bg-amber-500/10 px-3.5 py-1 rounded-full border border-amber-500/30 mb-3 inline-block">
-              Liberação Imediata
-            </span>
             <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight">
               GARANTINDO SEU INGRESSO, VOCÊ RECEBE <span className="text-amber-400">3 AULAS IMEDIATAS</span>
             </h2>
@@ -495,7 +407,6 @@ export default function App() {
                     <span className="text-[10px] font-black uppercase tracking-wider bg-amber-400 text-slate-950 px-2.5 py-0.5 rounded-full">
                       {cls.badge}
                     </span>
-                    <span className="text-xs text-slate-400 font-mono">{cls.duration}</span>
                   </div>
 
                   <div className="w-12 h-12 rounded-xl bg-amber-400/10 text-amber-400 flex items-center justify-center mb-4">
@@ -513,12 +424,7 @@ export default function App() {
             ))}
           </div>
 
-          {/* Connection explanation note */}
-          <div className="p-5 rounded-2xl bg-[#10141d] border border-amber-500/25 max-w-3xl mx-auto text-center">
-            <p className="text-xs sm:text-sm text-slate-300">
-              <strong className="text-amber-400">Por que isso faz toda a diferença?</strong> Porque o método Constru 10x começa no instante em que você assiste a essas aulas, reprograma sua visão de mercado e já chega na imersão com o mapa na mão.
-            </p>
-          </div>
+
         </div>
       </section>
 
@@ -662,30 +568,7 @@ export default function App() {
             </p>
           </div>
 
-          {/* Everything you receive summary */}
-          <div className="bg-[#121620] border border-amber-500/30 rounded-3xl p-6 sm:p-8">
-            <h3 className="text-base sm:text-lg font-bold text-white mb-4 text-center">
-              Resumo: Tudo O Que Você Recebe por Apenas <span className="text-amber-400">R$ 79,90 à vista</span>:
-            </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-xs">
-              <div className="p-3.5 rounded-xl bg-[#090b0e] border border-slate-800 text-slate-300">
-                <strong className="text-white block mb-1">1. Ingresso Oficial</strong>
-                Acesso à imersão online no Zoom dia 07/11 (10h às 17h).
-              </div>
-              <div className="p-3.5 rounded-xl bg-[#090b0e] border border-slate-800 text-slate-300">
-                <strong className="text-amber-400 block mb-1">2. 3 Aulas Imediatas</strong>
-                Acesso liberado agora para destravar a postura e a visão de negócio.
-              </div>
-              <div className="p-3.5 rounded-xl bg-[#090b0e] border border-slate-800 text-slate-300">
-                <strong className="text-white block mb-1">3. Roteiro da Reunião</strong>
-                As 5 etapas para conduzir conversas de alto valor com clientes.
-              </div>
-              <div className="p-3.5 rounded-xl bg-[#090b0e] border border-slate-800 text-slate-300">
-                <strong className="text-emerald-400 block mb-1">4. Garantia Risco Zero</strong>
-                Devolução de 100% do seu dinheiro caso não atenda suas expectativas.
-              </div>
-            </div>
-          </div>
+
         </div>
       </section>
 

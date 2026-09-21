@@ -169,9 +169,6 @@ export const RevenueCalculator: React.FC<RevenueCalculatorProps> = ({ onCtaClick
             <span>Quero aprender o método para faturar 10x mais</span>
             <ArrowRight className="w-5 h-5" />
           </button>
-          <p className="text-xs text-slate-400 mt-2.5">
-            Ingresso do 1º Lote por apenas <strong className="text-amber-400">R$ 79,90</strong> ou 12x de R$ 7,98
-          </p>
         </div>
       </div>
     </div>
