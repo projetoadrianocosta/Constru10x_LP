@@ -74,17 +74,17 @@ export default function App() {
           {/* Category Eyebrow Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-950/60 border border-blue-500/40 text-blue-300 font-bold uppercase tracking-wider mb-6 backdrop-blur-sm">
             <Building2 className="w-4 h-4 text-blue-400" />
-            <span className="text-[12px]">Imersão Online para Engenheiros, Arquitetos e Construtores</span>
+            <span className="text-[12px]">Dia 07 de Novembro, online e ao vivo das 10 às 17h</span>
           </div>
 
           {/* Main Headline with ONLY Blue and Yellow accents */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[53.4px] font-black text-white leading-[1.14] tracking-tight mb-6 max-w-4xl mx-auto">
-            ESTÁ NA HORA DE PARAR DE <span className="text-white">COBRAR PELO QUE FAZ</span> E SER ESCOLHIDO PELO <span className="text-amber-400">VALOR QUE ENTREGA</span>.
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[44.4px] font-black text-white leading-[1.14] tracking-tight mb-6 max-w-4xl mx-auto">
+            Em apenas 1 dia de imersão, você vai aprender como aumentar seu <span className="text-amber-400">faturamento</span> em até 10x através de um método que já fechou <span className="text-amber-400">+560 mil em contratos</span>
           </h1>
 
           {/* Core Promise Subtitle with Constru 10x */}
           <p className="text-base sm:text-lg md:text-xl text-slate-300 font-medium leading-relaxed mb-8 max-w-3xl mx-auto">
-            Na imersão <strong className="text-amber-400 font-bold">Constru10x</strong>, você vai aprender como construir com qualidade, segurança e custo baixo - e como multiplicar em 10x o seu faturamento com o método que já fechou mais de <strong className="text-white font-bold">560 mil em contratos</strong>.
+            Construindo com qualidade, segurança, no menor custo e mais dinheiro no seu bolso.
           </p>
 
           {/* Key Event Badges Grid */}
@@ -141,6 +141,57 @@ export default function App() {
               <ShieldCheck className="w-4 h-4 text-emerald-400" />
               Garantia Incondicional Risco Zero
             </span>
+          </div>
+        </div>
+      </section>
+
+      {/* 8. SECTION: CRONOGRAMA DO DIA 07 DE NOVEMBRO (10H ÀS 17H NO ZOOM) */}
+      <section id="cronograma" className="py-16 sm:py-24 bg-[#0d1017] border-y border-slate-800">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-14">
+            <span className="text-xs font-black uppercase tracking-widest text-amber-400 bg-amber-500/10 px-3.5 py-1 rounded-full border border-amber-500/30 mb-3 inline-block">
+              Imersão Online
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight">
+              O QUE VOCÊ VAI RECEBER NO DIA 07 DE NOVEMBRO
+            </h2>
+            <p className="text-slate-400 text-sm sm:text-base mt-2">
+              Um dia intensivo 100% online no Zoom, das 10h às 17h (Horário de Brasília).
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {SCHEDULE_BLOCKS.map((block, idx) => (
+              <div 
+                key={idx}
+                className="bg-[#121620] border border-slate-800 hover:border-amber-400/50 rounded-2xl p-6 sm:p-7 transition-all shadow-lg flex flex-col justify-between"
+              >
+                <div>
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="w-8 h-8 rounded-lg bg-amber-400/10 text-amber-400 border border-amber-400/30 flex items-center justify-center font-black text-xs font-mono">
+                      0{idx + 1}
+                    </span>
+                    <h3 className="text-lg font-bold text-white leading-snug">{block.title}</h3>
+                  </div>
+
+                  <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                    {block.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Schedule CTA */}
+          <div className="text-center mt-10">
+            <button
+              type="button"
+              onClick={handleOpenCheckout}
+              className="px-8 py-4 bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-sm uppercase tracking-wider rounded-xl shadow-xl transition-all hover:scale-105 active:scale-95 inline-flex items-center gap-2"
+            >
+              <span>Garantir Vaga na Imersão • 1º Lote R$ 79,90 à vista</span>
+              <ArrowRight className="w-4 h-4" />
+            </button>
           </div>
         </div>
       </section>
@@ -341,57 +392,6 @@ export default function App() {
       <section className="py-16 sm:py-24 bg-[#090b0e]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <RevenueCalculator onCtaClick={handleOpenCheckout} />
-        </div>
-      </section>
-
-      {/* 8. SECTION: CRONOGRAMA DO DIA 07 DE NOVEMBRO (10H ÀS 17H NO ZOOM) */}
-      <section id="cronograma" className="py-16 sm:py-24 bg-[#0d1017] border-y border-slate-800">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-14">
-            <span className="text-xs font-black uppercase tracking-widest text-amber-400 bg-amber-500/10 px-3.5 py-1 rounded-full border border-amber-500/30 mb-3 inline-block">
-              Imersão Online
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight">
-              O QUE VOCÊ VAI RECEBER NO DIA 07 DE NOVEMBRO
-            </h2>
-            <p className="text-slate-400 text-sm sm:text-base mt-2">
-              Um dia intensivo 100% online no Zoom, das 10h às 17h (Horário de Brasília).
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {SCHEDULE_BLOCKS.map((block, idx) => (
-              <div 
-                key={idx}
-                className="bg-[#121620] border border-slate-800 hover:border-amber-400/50 rounded-2xl p-6 sm:p-7 transition-all shadow-lg flex flex-col justify-between"
-              >
-                <div>
-                  <div className="flex items-center gap-3 mb-3">
-                    <span className="w-8 h-8 rounded-lg bg-amber-400/10 text-amber-400 border border-amber-400/30 flex items-center justify-center font-black text-xs font-mono">
-                      0{idx + 1}
-                    </span>
-                    <h3 className="text-lg font-bold text-white leading-snug">{block.title}</h3>
-                  </div>
-
-                  <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                    {block.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Schedule CTA */}
-          <div className="text-center mt-10">
-            <button
-              type="button"
-              onClick={handleOpenCheckout}
-              className="px-8 py-4 bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-sm uppercase tracking-wider rounded-xl shadow-xl transition-all hover:scale-105 active:scale-95 inline-flex items-center gap-2"
-            >
-              <span>Garantir Vaga na Imersão • 1º Lote R$ 79,90 à vista</span>
-              <ArrowRight className="w-4 h-4" />
-            </button>
-          </div>
         </div>
       </section>
 
