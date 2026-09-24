@@ -120,12 +120,14 @@ export const RevenueCalculator: React.FC<RevenueCalculatorProps> = ({ onCtaClick
 
           {/* Constru10x reality */}
           <div className="p-6 rounded-2xl bg-gradient-to-b from-[#182133] to-[#121926] border-2 border-amber-400/60 shadow-xl relative">
-            <div className="absolute top-3 right-3 bg-amber-400 text-slate-950 text-[10px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded-full">
-              Potencial {growthMultiplier}x Maior
-            </div>
-            <div className="flex items-center gap-2 text-amber-400 text-xs font-bold uppercase tracking-wider mb-2">
-              <TrendingUp className="w-4 h-4" />
-              <span>Com o Posicionamento Constru10x</span>
+            <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
+              <div className="flex items-center gap-2 text-amber-400 text-xs font-bold uppercase tracking-wider">
+                <TrendingUp className="w-4 h-4 shrink-0" />
+                <span>Com o Posicionamento Constru10x</span>
+              </div>
+              <div className="bg-amber-400 text-slate-950 text-[10px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded-full whitespace-nowrap">
+                Potencial {growthMultiplier}x Maior
+              </div>
             </div>
             <p className="text-xs text-slate-300 mb-4">Cobrando pelo valor gerado, economia de obra e gestão estratégica:</p>
             <div className="space-y-3 font-mono">
