@@ -12,13 +12,10 @@ export const RevenueCalculator: React.FC<RevenueCalculatorProps> = ({ onCtaClick
   const monthlyCurrent = currentTicket * projectsPerMonth;
   const annualCurrent = monthlyCurrent * 12;
 
-  // Real 10x Model based on Adriano's transcripts:
-  // Instead of selling R$ 5k project, adding management / economy percentage (2-3% of cost saved or Turn Key)
-  // Average consulting ticket R$ 25.000 - R$ 60.000
-  const projectedTicket10x = Math.max(currentTicket * 4.5, 25000);
-  const monthlyProjected = projectedTicket10x * Math.min(projectsPerMonth, 3);
+  // Card B = 5x the result of Card A, reflecting the ticket size gain
+  const monthlyProjected = monthlyCurrent * 5;
   const annualProjected = monthlyProjected * 12;
-  const growthMultiplier = (annualProjected / (annualCurrent || 1)).toFixed(1);
+  const growthMultiplier = "5.0";
 
   return (
     <div className="bg-[#10141d] border border-amber-500/20 rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden" id="calculadora-constru10x">

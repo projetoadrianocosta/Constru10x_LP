@@ -20,8 +20,8 @@ export const TICKET_LOTS: TicketLot[] = [
   {
     id: 1,
     name: "1º LOTE EXCLUSIVO",
-    price: 79.90,
-    priceFormatted: "R$ 79,90",
+    price: 49.90,
+    priceFormatted: "R$ 49,90",
     installments: "Pagamento único à vista",
     status: "active",
     label: "1º LOTE ATIVO • VALOR PROMOCIONAL",
