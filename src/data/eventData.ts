@@ -135,19 +135,39 @@ export const TESTIMONIALS: TestimonialCase[] = [
 
 export const FAQS: FAQItem[] = [
   {
-    question: "O evento vai ficar gravado ou terá replay?",
-    answer: "NÃO. Esta imersão é um dia intensivo 100% online no Zoom, no dia 07 de Novembro de 2026, das 10h às 17h (Horário de Brasília). O compromisso ao vivo faz toda a diferença para absorver o método Constru 10x sem distrações.",
+    question: "Para quem é o evento Constru10x?",
+    answer: "Engenheiros, construtores e arquitetos que desejam acelerar seus resultados e escalar negócios em 2027.",
   },
   {
-    question: "O método Constru 10x serve para arquitetos e construtores?",
-    answer: "Com certeza. O método Constru 10x foi desenhado para engenheiros civis, arquitetos e construtores que querem parar de brigar por preço, fechar contratos com margem saudável e ter um processo comercial previsível.",
+    question: "Estou começando agora, a imersão é pra mim?",
+    answer: "Sim. Principalmente se você sente que ainda não tem fluxo de clientes ou experiência suficiente.",
   },
   {
-    question: "E se eu for recém-formado ou estiver começando do zero?",
-    answer: "Melhor ainda, porque você não precisará passar anos cometendo os erros comuns de disputar por preço baixo ou cobrar sem conhecer a margem real. Você começará com o método Constru 10x desde o primeiro cliente.",
+    question: "Já estou em um bom momento. Ainda assim a imersão pode agregar mais?",
+    answer: "Se você sente que poderia estar faturando mais, organizando melhor a operação, delegando com mais clareza ou escalando com previsibilidade — essa imersão é para você. Aqui não é sobre começar, é sobre crescer com método.",
   },
   {
-    question: "Como funciona a garantia incondicional de risco zero?",
-    answer: "Eu confio tanto no que vou te ensinar que, se você participar da Imersão, assistir às três aulas, e mesmo assim achar que não valeu à pena eu devolvo o seu dinheiro! Basta me enviar uma mensagem pedindo o seu reembolso. Simples assim.",
+    question: "Posso comprar mais de 1 ingresso?",
+    answer: "Sim. Recomendado para sócios e líderes de áreas.",
+  },
+  {
+    question: "Vou receber as 3 aulas bônus antes do evento?",
+    answer: "Sim. Assim que sua compra é confirmada, você já recebe o acesso imediato às 3 aulas.",
+  },
+  {
+    question: "Vai ter replay da imersão?",
+    answer: "Não. O evento é 100% ao vivo, sem gravação disponível depois — por isso é essencial reservar o dia 07/11 inteiro, das 10h às 17h.",
+  },
+  {
+    question: "Preciso já atuar no mercado de alto padrão pra participar?",
+    answer: "Não. O método foi desenhado justamente pra quem quer construir esse posicionamento — não é preciso já estar lá.",
+  },
+  {
+    question: "Como vou receber o acesso ao evento e às aulas?",
+    answer: "Por e-mail, assim que a compra for confirmada.",
+  },
+  {
+    question: "E se eu não puder participar em algum horário do dia 07/11?",
+    answer: "Como não há replay, recomendamos reservar o dia inteiro. Casos pontuais podem ser verificados diretamente com o suporte.",
   },
 ];
