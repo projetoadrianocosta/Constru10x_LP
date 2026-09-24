@@ -41,6 +41,9 @@ export const BonusModal: React.FC<BonusModalProps> = ({ bonus, onClose, onSelect
 
         {/* Video Player Preview Mockup */}
         <div className="relative aspect-video rounded-2xl bg-[#090b0e] border border-slate-800 flex flex-col items-center justify-center p-6 text-center mb-6 overflow-hidden group">
+          {bonus.id === 1 && <img src="/src/assets/images/Aula-1.webp" alt="" className="absolute inset-0 w-full h-full object-cover opacity-50" />}
+          {bonus.id === 2 && <img src="/src/assets/images/Aula-2.webp" alt="" className="absolute inset-0 w-full h-full object-cover opacity-50" />}
+          {bonus.id === 3 && <img src="/src/assets/images/Aula-3.webp" alt="" className="absolute inset-0 w-full h-full object-cover opacity-50" />}
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
           <div className="relative z-10 flex flex-col items-center">
             <div className="w-16 h-16 rounded-full bg-amber-400/90 text-slate-950 flex items-center justify-center mb-3 shadow-xl group-hover:scale-110 transition-transform">
@@ -74,14 +77,14 @@ export const BonusModal: React.FC<BonusModalProps> = ({ bonus, onClose, onSelect
 
         {/* How this connects to the Live Event */}
         <div className="p-4 rounded-xl bg-blue-950/40 border border-blue-600/30 mb-6 text-xs text-blue-200">
-          <strong className="block text-blue-300 mb-1 font-bold">Por que assistir antes do dia 07 de Setembro?</strong>
+          <strong className="block text-blue-300 mb-1 font-bold">Por que assistir antes do dia 07 de Novembro?</strong>
           Estas 3 aulas preparam o seu alinhamento mental e diagnóstico para que você chegue na imersão ao vivo já sabendo onde seu negócio está travado e aproveite 100% dos scripts de fechamento e métodos de economia de obra do Adriano.
         </div>
 
         {/* Action */}
         <div className="flex flex-col sm:flex-row gap-3 items-center justify-between pt-2 border-t border-slate-800">
           <div className="text-xs text-slate-400">
-            <span className="text-amber-400 font-bold block">1º Lote: R$ 79,90</span>
+            <span className="text-amber-400 font-bold block">1º Lote: R$ 49,90</span>
             Acesso liberado no seu e-mail e WhatsApp
           </div>
           <button

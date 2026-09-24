@@ -40,6 +40,9 @@ import { FloatingCTA } from './components/FloatingCTA';
 import { PreLaunchClass } from './types';
 import { initTracking, trackEvent } from './utils/pixel';
 import adrianoImg from './assets/images/regenerated_image_1790213488705.webp';
+import aula1Img from './assets/images/Aula-1.webp';
+import aula2Img from './assets/images/Aula-2.webp';
+import aula3Img from './assets/images/Aula-3.webp';
 
 export default function App() {
   const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
@@ -206,16 +209,14 @@ export default function App() {
               <div>
                 {/* Visual Thumbnail instead of icon */}
                 <div className="relative aspect-[16/9] w-full bg-slate-950 overflow-hidden border-b border-slate-800">
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-slate-950/40 to-transparent z-10" />
-                  
-                  {/* Premium lesson illustration */}
-                  <div className="absolute inset-0 flex items-center justify-center bg-[#182133] group-hover:scale-105 transition-transform duration-500">
-                    <div className="absolute top-2 left-2 bg-amber-400 text-slate-950 text-[10px] uppercase font-black px-2 py-0.5 rounded tracking-wider z-20">
-                      Aula 1
-                    </div>
-                    <div className="w-12 h-12 rounded-full bg-amber-400 text-slate-950 flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-200 z-20">
-                      <Play className="w-5 h-5 fill-slate-950 translate-x-[1.5px]" />
-                    </div>
+                  <img 
+                    src={aula1Img} 
+                    alt="Aula 1" 
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent z-10" />
+                  <div className="absolute top-2 left-2 bg-amber-400 text-slate-950 text-[10px] uppercase font-black px-2 py-0.5 rounded tracking-wider z-20">
+                    Aula 1
                   </div>
                 </div>
 
@@ -224,7 +225,6 @@ export default function App() {
                     <span className="text-[10px] font-black uppercase tracking-wider bg-amber-400 text-slate-950 px-2.5 py-0.5 rounded-full">
                       Acesso Imediato
                     </span>
-                    <span className="text-xs text-slate-400 font-mono">28 min</span>
                   </div>
                   <h3 className="font-extrabold text-base text-white mb-2 leading-snug group-hover:text-amber-300 transition-colors">
                     Como Parar de Trabalhar Mais e Aumentar o Seu Faturamento
@@ -244,16 +244,14 @@ export default function App() {
               <div>
                 {/* Visual Thumbnail instead of icon */}
                 <div className="relative aspect-[16/9] w-full bg-slate-950 overflow-hidden border-b border-slate-800">
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-slate-950/40 to-transparent z-10" />
-                  
-                  {/* Premium lesson illustration */}
-                  <div className="absolute inset-0 flex items-center justify-center bg-[#131d2c] group-hover:scale-105 transition-transform duration-500">
-                    <div className="absolute top-2 left-2 bg-amber-400 text-slate-950 text-[10px] uppercase font-black px-2 py-0.5 rounded tracking-wider z-20">
-                      Aula 2
-                    </div>
-                    <div className="w-12 h-12 rounded-full bg-amber-400 text-slate-950 flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-200 z-20">
-                      <Play className="w-5 h-5 fill-slate-950 translate-x-[1.5px]" />
-                    </div>
+                  <img 
+                    src={aula2Img} 
+                    alt="Aula 2" 
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent z-10" />
+                  <div className="absolute top-2 left-2 bg-amber-400 text-slate-950 text-[10px] uppercase font-black px-2 py-0.5 rounded tracking-wider z-20">
+                    Aula 2
                   </div>
                 </div>
 
@@ -262,7 +260,6 @@ export default function App() {
                     <span className="text-[10px] font-black uppercase tracking-wider bg-amber-400 text-slate-950 px-2.5 py-0.5 rounded-full">
                       Acesso Imediato
                     </span>
-                    <span className="text-xs text-slate-400 font-mono">32 min</span>
                   </div>
                   <h3 className="font-extrabold text-base text-white mb-2 leading-snug group-hover:text-amber-300 transition-colors">
                     O Motivo Pelo Qual Cobrar Mais Caro Te Faz Perder Cliente
@@ -282,16 +279,14 @@ export default function App() {
               <div>
                 {/* Visual Thumbnail instead of icon */}
                 <div className="relative aspect-[16/9] w-full bg-slate-950 overflow-hidden border-b border-slate-800">
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-slate-950/40 to-transparent z-10" />
-                  
-                  {/* Premium lesson illustration */}
-                  <div className="absolute inset-0 flex items-center justify-center bg-[#151c27] group-hover:scale-105 transition-transform duration-500">
-                    <div className="absolute top-2 left-2 bg-amber-400 text-slate-950 text-[10px] uppercase font-black px-2 py-0.5 rounded tracking-wider z-20">
-                      Aula 3
-                    </div>
-                    <div className="w-12 h-12 rounded-full bg-amber-400 text-slate-950 flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-200 z-20">
-                      <Play className="w-5 h-5 fill-slate-950 translate-x-[1.5px]" />
-                    </div>
+                  <img 
+                    src={aula3Img} 
+                    alt="Aula 3" 
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent z-10" />
+                  <div className="absolute top-2 left-2 bg-amber-400 text-slate-950 text-[10px] uppercase font-black px-2 py-0.5 rounded tracking-wider z-20">
+                    Aula 3
                   </div>
                 </div>
 
@@ -300,7 +295,6 @@ export default function App() {
                     <span className="text-[10px] font-black uppercase tracking-wider bg-amber-400 text-slate-950 px-2.5 py-0.5 rounded-full">
                       Acesso Imediato
                     </span>
-                    <span className="text-xs text-slate-400 font-mono">30 min</span>
                   </div>
                   <h3 className="font-extrabold text-base text-white mb-2 leading-snug group-hover:text-amber-300 transition-colors">
                     A Oportunidade Que Você Ainda Não Está Enxergando
