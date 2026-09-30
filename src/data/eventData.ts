@@ -126,10 +126,10 @@ export const TESTIMONIALS: TestimonialCase[] = [
     role: "Construtora & Fiscalização",
     location: "Belo Horizonte - MG",
     tag: "Fiscalização e Gestão",
-    result: "+R$ 1 Milhão em contratos de execução",
-    story: "Retornando para a engenharia após a maternidade, estruturou sua rotina, superou a insegurança de canteiro e hoje é o braço de fiscalização de obras de alto padrão do ecossistema em BH, assumindo mais de R$ 1 milhão em contratos.",
+    result: "+R$ 600 Mil em contratos de execução",
+    story: "Retornando para a engenharia após a maternidade, estruturou sua rotina, superou a insegurança de canteiro e hoje é o braço de fiscalização de obras de alto padrão do ecossistema em BH, assumindo mais de +R$ 600 MIL em contratos.",
     metricLabel: "Contratos de Execução",
-    metricValue: "+R$ 1.000.000",
+    metricValue: "+R$ 600.000",
   },
 ];
 

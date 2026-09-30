@@ -197,7 +197,7 @@ export default function App() {
                 1
               </div>
               <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
-                <strong>Posicionamento:</strong> como fazer a transição definitiva para o mercado de alto padrão.
+                <strong>Posicionamento de Alto Padrão:</strong> Saiba como se posicionar e migrar definitivamente para o mercado de alto padrão e ser pago pelo valor que gera, sem disputar por preço.
               </p>
             </div>
 
@@ -206,7 +206,7 @@ export default function App() {
                 2
               </div>
               <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
-                <strong>Como gerar dezenas de milhares de reais em economia no canteiro</strong> — e transformar essa economia na maior alavanca de valor dos seus honorários.
+                <strong>Captação Multicanal:</strong> Domine as 6 formas de captação ativa de clientes de alto padrão para gerar demanda previsível, sem depender de indicações ou sorte.
               </p>
             </div>
 
@@ -215,7 +215,7 @@ export default function App() {
                 3
               </div>
               <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
-                <strong>O processo de vendas em 5 etapas</strong> para fechar contratos de alto ticket sem disputar por preço.
+                <strong>Script de Fechamento:</strong> Domine o script de 5 etapas que já me gerou +1 milhão de faturamento para você vender e negociar garantindo o fechamento.
               </p>
             </div>
           </div>
@@ -225,145 +225,6 @@ export default function App() {
             <p className="text-xs sm:text-sm text-slate-400 font-semibold">
               Conteúdo 100% prático, com espaço para tirar dúvidas ao vivo. <span className="text-amber-400">Atenção: o evento não terá replay.</span>
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* SEÇÃO 3 — AS 3 AULAS BÔNUS */}
-      <section id="bonus-imediatos" className="py-16 sm:py-24 bg-[#090b0e] relative">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-14">
-            <span className="text-xs font-black uppercase tracking-widest text-amber-400 bg-amber-500/10 px-3.5 py-1 rounded-full border border-amber-500/30 mb-3 inline-block">
-              Liberação Imediata
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight">
-              Garantindo seu ingresso, você já recebe <span className="text-amber-400">3 aulas bônus</span>
-            </h2>
-            <p className="text-slate-400 text-sm sm:text-base mt-2">
-              Comece a preparar o terreno antes do evento.
-            </p>
-          </div>
-
-          {/* 3 Aulas Bônus com Thumbnails */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            
-            {/* Aula 1 Card */}
-            <div 
-              onClick={() => setSelectedBonus(PRE_LAUNCH_CLASSES[0])}
-              className="bg-[#121620] border-2 border-slate-800 hover:border-amber-400/60 rounded-2xl overflow-hidden flex flex-col justify-between transition-all shadow-xl group cursor-pointer"
-            >
-              <div>
-                {/* Visual Thumbnail instead of icon */}
-                <div className="relative aspect-[16/9] w-full bg-slate-950 overflow-hidden border-b border-slate-800">
-                  <img 
-                    src={aula1Img} 
-                    alt="Aula 1" 
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent z-10" />
-                  <div className="absolute top-2 left-2 bg-amber-400 text-slate-950 text-[10px] uppercase font-black px-2 py-0.5 rounded tracking-wider z-20">
-                    Aula 1
-                  </div>
-                </div>
-
-                <div className="p-5 sm:p-6">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-[10px] font-black uppercase tracking-wider bg-amber-400 text-slate-950 px-2.5 py-0.5 rounded-full">
-                      Acesso Imediato
-                    </span>
-                  </div>
-                  <h3 className="font-extrabold text-base text-white mb-2 leading-snug group-hover:text-amber-300 transition-colors">
-                    Como Parar de Trabalhar Mais e Aumentar o Seu Faturamento
-                  </h3>
-                  <p className="text-xs text-slate-300 leading-relaxed">
-                    Como transformei R$16 mil em R$560 mil em contratos em BH — sem trabalhar mais horas.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Aula 2 Card */}
-            <div 
-              onClick={() => setSelectedBonus(PRE_LAUNCH_CLASSES[1])}
-              className="bg-[#121620] border-2 border-slate-800 hover:border-amber-400/60 rounded-2xl overflow-hidden flex flex-col justify-between transition-all shadow-xl group cursor-pointer"
-            >
-              <div>
-                {/* Visual Thumbnail instead of icon */}
-                <div className="relative aspect-[16/9] w-full bg-slate-950 overflow-hidden border-b border-slate-800">
-                  <img 
-                    src={aula2Img} 
-                    alt="Aula 2" 
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent z-10" />
-                  <div className="absolute top-2 left-2 bg-amber-400 text-slate-950 text-[10px] uppercase font-black px-2 py-0.5 rounded tracking-wider z-20">
-                    Aula 2
-                  </div>
-                </div>
-
-                <div className="p-5 sm:p-6">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-[10px] font-black uppercase tracking-wider bg-amber-400 text-slate-950 px-2.5 py-0.5 rounded-full">
-                      Acesso Imediato
-                    </span>
-                  </div>
-                  <h3 className="font-extrabold text-base text-white mb-2 leading-snug group-hover:text-amber-300 transition-colors">
-                    O Motivo Pelo Qual Cobrar Mais Caro Te Faz Perder Cliente
-                  </h3>
-                  <p className="text-xs text-slate-300 leading-relaxed">
-                    A diferença entre cobrar pelo que você faz e cobrar pelo que você entrega — e por que isso muda o fechamento.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Aula 3 Card */}
-            <div 
-              onClick={() => setSelectedBonus(PRE_LAUNCH_CLASSES[2])}
-              className="bg-[#121620] border-2 border-slate-800 hover:border-amber-400/60 rounded-2xl overflow-hidden flex flex-col justify-between transition-all shadow-xl group cursor-pointer"
-            >
-              <div>
-                {/* Visual Thumbnail instead of icon */}
-                <div className="relative aspect-[16/9] w-full bg-slate-950 overflow-hidden border-b border-slate-800">
-                  <img 
-                    src={aula3Img} 
-                    alt="Aula 3" 
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent z-10" />
-                  <div className="absolute top-2 left-2 bg-amber-400 text-slate-950 text-[10px] uppercase font-black px-2 py-0.5 rounded tracking-wider z-20">
-                    Aula 3
-                  </div>
-                </div>
-
-                <div className="p-5 sm:p-6">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-[10px] font-black uppercase tracking-wider bg-amber-400 text-slate-950 px-2.5 py-0.5 rounded-full">
-                      Acesso Imediato
-                    </span>
-                  </div>
-                  <h3 className="font-extrabold text-base text-white mb-2 leading-snug group-hover:text-amber-300 transition-colors">
-                    A Oportunidade Que Você Ainda Não Está Enxergando
-                  </h3>
-                  <p className="text-xs text-slate-300 leading-relaxed">
-                    Como transformar honorário técnico em consultoria de alto valor, ancorada no método Constru10x.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          {/* Seção 3 CTA */}
-          <div className="text-center">
-            <button
-              type="button"
-              onClick={handleOpenCheckout}
-              className="px-8 py-4 bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-sm uppercase tracking-wider rounded-xl shadow-xl transition-all hover:scale-105 active:scale-95 inline-flex items-center gap-2"
-            >
-              <span>QUERO APRENDER O MÉTODO PARA FATURAR 10X MAIS</span>
-              <ArrowRight className="w-4 h-4" />
-            </button>
           </div>
         </div>
       </section>
@@ -379,7 +240,7 @@ export default function App() {
                 <Check className="w-6 h-6" />
               </div>
               <h3 className="text-xl sm:text-2xl font-black text-white leading-tight">
-                Essa imersão é para você que é Engenheiro, Arquiteto ou Construtor e:
+                A IMERSÃO CONSTRU10X É PARA ENGENHEIROS, ARQUITETOS E CONSTRUTORAS
               </h3>
             </div>
 
@@ -580,6 +441,145 @@ export default function App() {
       <section className="py-16 sm:py-24 bg-[#090b0e] border-t border-slate-800/80">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <RevenueCalculator onCtaClick={handleOpenCheckout} />
+        </div>
+      </section>
+
+      {/* SEÇÃO 3 — AS 3 AULAS BÔNUS */}
+      <section id="bonus-imediatos" className="py-16 sm:py-24 bg-[#090b0e] relative">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-14">
+            <span className="text-xs font-black uppercase tracking-widest text-amber-400 bg-amber-500/10 px-3.5 py-1 rounded-full border border-amber-500/30 mb-3 inline-block">
+              Liberação Imediata
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight">
+              Garantindo seu ingresso, você já recebe <span className="text-amber-400">3 aulas bônus</span>
+            </h2>
+            <p className="text-slate-400 text-sm sm:text-base mt-2">
+              Comece a preparar o terreno antes do evento.
+            </p>
+          </div>
+
+          {/* 3 Aulas Bônus com Thumbnails */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            
+            {/* Aula 1 Card */}
+            <div 
+              onClick={() => setSelectedBonus(PRE_LAUNCH_CLASSES[0])}
+              className="bg-[#121620] border-2 border-slate-800 hover:border-amber-400/60 rounded-2xl overflow-hidden flex flex-col justify-between transition-all shadow-xl group cursor-pointer"
+            >
+              <div>
+                {/* Visual Thumbnail instead of icon */}
+                <div className="relative aspect-[16/9] w-full bg-slate-950 overflow-hidden border-b border-slate-800">
+                  <img 
+                    src={aula1Img} 
+                    alt="Aula 1" 
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent z-10" />
+                  <div className="absolute top-2 left-2 bg-amber-400 text-slate-950 text-[10px] uppercase font-black px-2 py-0.5 rounded tracking-wider z-20">
+                    Aula 1
+                  </div>
+                </div>
+
+                <div className="p-5 sm:p-6">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-[10px] font-black uppercase tracking-wider bg-amber-400 text-slate-950 px-2.5 py-0.5 rounded-full">
+                      Acesso Imediato
+                    </span>
+                  </div>
+                  <h3 className="font-extrabold text-base text-white mb-2 leading-snug group-hover:text-amber-300 transition-colors">
+                    Como Parar de Trabalhar Mais e Aumentar o Seu Faturamento
+                  </h3>
+                  <p className="text-xs text-slate-300 leading-relaxed">
+                    Como transformei R$16 mil em R$560 mil em contratos em BH — sem trabalhar mais horas.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Aula 2 Card */}
+            <div 
+              onClick={() => setSelectedBonus(PRE_LAUNCH_CLASSES[1])}
+              className="bg-[#121620] border-2 border-slate-800 hover:border-amber-400/60 rounded-2xl overflow-hidden flex flex-col justify-between transition-all shadow-xl group cursor-pointer"
+            >
+              <div>
+                {/* Visual Thumbnail instead of icon */}
+                <div className="relative aspect-[16/9] w-full bg-slate-950 overflow-hidden border-b border-slate-800">
+                  <img 
+                    src={aula2Img} 
+                    alt="Aula 2" 
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent z-10" />
+                  <div className="absolute top-2 left-2 bg-amber-400 text-slate-950 text-[10px] uppercase font-black px-2 py-0.5 rounded tracking-wider z-20">
+                    Aula 2
+                  </div>
+                </div>
+
+                <div className="p-5 sm:p-6">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-[10px] font-black uppercase tracking-wider bg-amber-400 text-slate-950 px-2.5 py-0.5 rounded-full">
+                      Acesso Imediato
+                    </span>
+                  </div>
+                  <h3 className="font-extrabold text-base text-white mb-2 leading-snug group-hover:text-amber-300 transition-colors">
+                    O Motivo Pelo Qual Cobrar Mais Caro Te Faz Perder Cliente
+                  </h3>
+                  <p className="text-xs text-slate-300 leading-relaxed">
+                    A diferença entre cobrar pelo que você faz e cobrar pelo que você entrega — e por que isso muda o fechamento.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Aula 3 Card */}
+            <div 
+              onClick={() => setSelectedBonus(PRE_LAUNCH_CLASSES[2])}
+              className="bg-[#121620] border-2 border-slate-800 hover:border-amber-400/60 rounded-2xl overflow-hidden flex flex-col justify-between transition-all shadow-xl group cursor-pointer"
+            >
+              <div>
+                {/* Visual Thumbnail instead of icon */}
+                <div className="relative aspect-[16/9] w-full bg-slate-950 overflow-hidden border-b border-slate-800">
+                  <img 
+                    src={aula3Img} 
+                    alt="Aula 3" 
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent z-10" />
+                  <div className="absolute top-2 left-2 bg-amber-400 text-slate-950 text-[10px] uppercase font-black px-2 py-0.5 rounded tracking-wider z-20">
+                    Aula 3
+                  </div>
+                </div>
+
+                <div className="p-5 sm:p-6">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-[10px] font-black uppercase tracking-wider bg-amber-400 text-slate-950 px-2.5 py-0.5 rounded-full">
+                      Acesso Imediato
+                    </span>
+                  </div>
+                  <h3 className="font-extrabold text-base text-white mb-2 leading-snug group-hover:text-amber-300 transition-colors">
+                    A Oportunidade Que Você Ainda Não Está Enxergando
+                  </h3>
+                  <p className="text-xs text-slate-300 leading-relaxed">
+                    Como transformar honorário técnico em consultoria de alto valor, ancorada no método Constru10x.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          {/* Seção 3 CTA */}
+          <div className="text-center">
+            <button
+              type="button"
+              onClick={handleOpenCheckout}
+              className="px-8 py-4 bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-sm uppercase tracking-wider rounded-xl shadow-xl transition-all hover:scale-105 active:scale-95 inline-flex items-center gap-2"
+            >
+              <span>QUERO APRENDER O MÉTODO PARA FATURAR 10X MAIS</span>
+              <ArrowRight className="w-4 h-4" />
+            </button>
+          </div>
         </div>
       </section>
 
