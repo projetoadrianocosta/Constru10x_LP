@@ -1,5 +1,21 @@
 @import "tailwindcss";
 
+/* Elementos clicáveis mostram a "mãozinha" (o preflight do Tailwind v4 deixa botões com a setinha). */
+@layer base {
+  a[href],
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  summary,
+  select,
+  label[for] {
+    cursor: pointer;
+  }
+  button:disabled,
+  [aria-disabled="true"] {
+    cursor: not-allowed;
+  }
+}
+
 @layer utilities {
   .bg-grid-pattern {
     background-size: 40px 40px;

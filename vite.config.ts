@@ -6,6 +6,8 @@ import {defineConfig} from 'vite';
 export default defineConfig(() => {
   return {
     plugins: [react(), tailwindcss()],
+    // Expõe NEXT_PUBLIC_* (ex.: NEXT_PUBLIC_META_PIXEL_ID) além de VITE_*. Nunca use esses prefixos em segredos.
+    envPrefix: ['VITE_', 'NEXT_PUBLIC_'],
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),

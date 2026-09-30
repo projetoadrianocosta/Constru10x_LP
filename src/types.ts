@@ -9,16 +9,6 @@ export interface TicketLot {
   deadlineDescription: string;
 }
 
-export interface PreLaunchClass {
-  id: number;
-  title: string;
-  subtitle: string;
-  duration: string;
-  badge: string;
-  summary: string;
-  takeaways: string[];
-}
-
 export interface ScheduleBlock {
   time: string;
   title: string;

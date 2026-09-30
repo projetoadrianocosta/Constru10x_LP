@@ -1,4 +1,4 @@
-import { TicketLot, PreLaunchClass, ScheduleBlock, TestimonialCase, FAQItem } from '../types';
+import { TicketLot, ScheduleBlock, TestimonialCase, FAQItem } from '../types';
 
 export const EVENT_DETAILS = {
   name: "Imersão Constru10x",
@@ -10,11 +10,23 @@ export const EVENT_DETAILS = {
   dateISO: "2026-11-07T10:00:00-03:00",
   timeDisplay: "Das 10h às 17h (Horário de Brasília)",
   format: "Imersão 100% Online no Zoom",
-  targetAudience: "Engenheiros Civis, Arquitetos e Construtores",
+  targetAudience: "Engenheiros Civis, Arquitetos e Construtoras",
   corePromise: "Te mostro como construir com qualidade, segurança e custo baixo — e como o método Constru 10x multiplica em até 10x o seu faturamento, construindo melhor e gastando menos.",
   tagline: "Pare de ser refém da briga de preço e feche contratos de alto valor com o método Constru 10x.",
   lot1DeadlineDate: "2026-10-26T23:59:59-03:00",
 };
+
+/**
+ * Ancoragem de preço da oferta: valor de referência ("de") de cada entregável.
+ * Entregáveis sem valor (grupo do WhatsApp, garantia) não entram na soma.
+ * TODO: confirmar/ajustar os valores de referência com o Adriano antes de publicar.
+ */
+export const OFFER_VALUES = {
+  ticket: 297,
+};
+export const OFFER_TOTAL_VALUE = OFFER_VALUES.ticket;
+
+export const formatBRL = (value: number) => `R$ ${value.toLocaleString('pt-BR')}`;
 
 export const TICKET_LOTS: TicketLot[] = [
   {
@@ -26,36 +38,6 @@ export const TICKET_LOTS: TicketLot[] = [
     status: "active",
     label: "1º LOTE ATIVO • VALOR PROMOCIONAL",
     deadlineDescription: "Válido por apenas 7 dias após o lançamento. Em seguida, o valor subirá para o 2º Lote.",
-  },
-];
-
-export const PRE_LAUNCH_CLASSES: PreLaunchClass[] = [
-  {
-    id: 1,
-    title: "Aula 1: Como Parar de Trabalhar Mais e Aumentar o Seu Faturamento",
-    subtitle: "A proporção de mercado e a virada matemática",
-    duration: "28 min",
-    badge: "Acesso Imediato",
-    summary: "Adriano revela como saiu do interior para gerar R$ 560 mil em contratos em BH com apenas R$ 16 mil investidos. Entenda por que trabalhar 14h por dia não resolve um gargalo que é de posicionamento comercial.",
-    takeaways: [],
-  },
-  {
-    id: 2,
-    title: "Aula 2: O Motivo Pelo Qual Cobrar Mais Caro Te Faz Perder Cliente",
-    subtitle: "Os gargalos silenciosos do profissional técnico",
-    duration: "32 min",
-    badge: "Acesso Imediato",
-    summary: "Descubra a diferença prática entre cobrar pelo que você faz versus pelo que você entrega. O diagnóstico cirúrgico dos erros que mantêm o técnico preso em orçamentos ignorados.",
-    takeaways: [],
-  },
-  {
-    id: 3,
-    title: "Aula 3: A Oportunidade Que Você Ainda Não Está Enxergando",
-    subtitle: "A cadeia lucrativa ao redor da sua técnica",
-    duration: "30 min",
-    badge: "Acesso Imediato",
-    summary: "O mercado paga caro para quem resolve problemas caros. Veja como transformar honorários modestos em consultorias de alto valor ao ancorar sua entrega no método Constru 10x.",
-    takeaways: [],
   },
 ];
 
@@ -125,7 +107,7 @@ export const TESTIMONIALS: TestimonialCase[] = [
 export const FAQS: FAQItem[] = [
   {
     question: "Para quem é o evento Constru10x?",
-    answer: "Engenheiros, construtores e arquitetos que desejam acelerar seus resultados e escalar negócios em 2027.",
+    answer: "Engenheiros, construtoras e arquitetos que desejam acelerar seus resultados e escalar negócios em 2027.",
   },
   {
     question: "Estou começando agora, a imersão é pra mim?",
@@ -140,10 +122,6 @@ export const FAQS: FAQItem[] = [
     answer: "Sim. Recomendado para sócios e líderes de áreas.",
   },
   {
-    question: "Vou receber as 3 aulas bônus antes do evento?",
-    answer: "Sim. Assim que sua compra é confirmada, você já recebe o acesso imediato às 3 aulas.",
-  },
-  {
     question: "Vai ter replay da imersão?",
     answer: "Não. O evento é 100% ao vivo, sem gravação disponível depois — por isso é essencial reservar o dia 07/11 inteiro, das 10h às 17h.",
   },
@@ -152,7 +130,7 @@ export const FAQS: FAQItem[] = [
     answer: "Não. O método foi desenhado justamente pra quem quer construir esse posicionamento — não é preciso já estar lá.",
   },
   {
-    question: "Como vou receber o acesso ao evento e às aulas?",
+    question: "Como vou receber o acesso ao evento?",
     answer: "Por e-mail, assim que a compra for confirmada.",
   },
   {
