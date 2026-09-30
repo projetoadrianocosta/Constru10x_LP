@@ -51,14 +51,14 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({ isOpen, onClose })
       setIsSubmitting(false);
       setIsSuccess(true);
       trackEvent('Lead', {
-        value: 49.90,
+        value: 27.00,
         currency: 'BRL',
         name: formData.name,
         email: formData.email,
         profession: formData.profession
       });
       trackEvent('Purchase', {
-        value: 49.90,
+        value: 27.00,
         currency: 'BRL',
         content_name: 'Ingresso Imersão Constru 10x',
         payment_method: paymentMethod
@@ -108,7 +108,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({ isOpen, onClose })
                 </span>
               </div>
               <div className="flex items-baseline gap-2 mt-1">
-                <span className="text-3xl font-black text-white font-mono">R$ 79,90</span>
+                <span className="text-3xl font-black text-white font-mono">{currentLot.priceFormatted}</span>
                 <span className="text-xs text-slate-300 font-bold">à vista</span>
               </div>
               <p className="text-[11px] text-slate-400 mt-1">

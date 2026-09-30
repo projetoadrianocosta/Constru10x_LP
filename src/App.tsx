@@ -60,7 +60,7 @@ export default function App() {
   const handleOpenCheckout = () => {
     setIsCheckoutOpen(true);
     trackEvent('InitiateCheckout', {
-      value: 49.90,
+      value: 27.00,
       currency: 'BRL',
       content_name: 'Ingresso Imersão Constru 10x',
       content_category: 'Imersão'
@@ -87,18 +87,18 @@ export default function App() {
             style={{ fontSize: '53px', width: '738px', maxWidth: '100%' }}
             className="text-3xl sm:text-4xl md:text-5xl lg:text-[53px] font-black text-white leading-[1.14] tracking-tight mb-6 max-w-4xl mx-auto"
           >
-            Saiba como aumentar seu <span className="text-amber-400">faturamento</span> em até 10x com o método que já gerou <span className="text-amber-400">+560 mil em contratos</span>
+            Aumente seu <span className="text-amber-400">faturamento em até 10x</span> sem precisar trabalhar 14h por dia
           </h1>
 
           {/* Subheadline */}
           <p className="text-base sm:text-lg md:text-xl text-slate-300 font-medium leading-relaxed mb-6 max-w-3xl mx-auto">
-            Construindo com qualidade, segurança, no menor custo — sem precisar trabalhar 14h por dia.
+            Em um dia de imersão, eu vou te entregar um plano de crescimento pronto para executar e fechar <span className="text-amber-400 font-semibold">no mínimo 30 mil por mês em contratos</span>.
           </p>
 
           {/* Destaque rápido */}
           <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-400/10 border border-amber-400/20 text-amber-300 text-xs sm:text-sm font-bold uppercase tracking-widest mb-8">
             <Users className="w-4 h-4 text-amber-400" />
-            <span>Para engenheiros, arquitetos e construtores</span>
+            <span>PARA ENGENHEIROS, ARQUITETOS E CONSTRUTORAS</span>
           </div>
 
           {/* Big CTA Group */}
@@ -109,7 +109,7 @@ export default function App() {
               id="hero-cta-button"
               className="w-full sm:w-auto px-10 py-4.5 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-slate-950 font-black text-base sm:text-lg uppercase tracking-wider rounded-2xl shadow-xl shadow-amber-500/25 transition-all hover:scale-105 active:scale-95 flex items-center justify-center gap-3 animate-pulse-glow"
             >
-              <span>QUERO PARTICIPAR DA IMERSÃO POR R$49,90</span>
+              <span>QUERO PARTICIPAR DA IMERSÃO POR R$27</span>
               <ArrowRight className="w-5 h-5 text-slate-950" />
             </button>
           </div>
@@ -126,6 +126,52 @@ export default function App() {
               Garantia Incondicional Risco Zero
             </span>
           </div>
+        </div>
+      </section>
+
+      {/* SEÇÃO VISOR / TICKER REVELAÇÃO (MOVIMENTOS INFINITOS E CRUZADOS) */}
+      <section className="relative h-28 sm:h-36 overflow-hidden bg-[#090b0e] z-20 flex items-center justify-center border-y border-slate-900">
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black pointer-events-none z-30" />
+        
+        {/* Ribbon container to hold both overlapping banners */}
+        <div className="absolute w-full h-full flex items-center justify-center overflow-hidden">
+          
+          {/* Gold Banner - Tilting Right (positive rotation) */}
+          <div className="absolute w-[120%] py-2.5 sm:py-3.5 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-600 text-slate-950 font-black tracking-widest text-xs uppercase shadow-[0_10px_30px_rgba(0,0,0,0.5)] transform rotate-[2.5deg] z-10 border-y border-amber-300/40">
+            <div className="overflow-hidden w-full">
+              <div className="animate-marquee-left flex whitespace-nowrap gap-16 items-center">
+                {Array(12).fill(null).map((_, i) => (
+                  <div key={i} className="flex items-center gap-3 shrink-0 font-sans text-xs sm:text-sm font-black tracking-widest">
+                    <span>IMERSÃO CONSTRU 10X</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 sm:w-5 h-5 shrink-0">
+                      <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                      <line x1="17" y1="7" x2="7" y2="17" />
+                      <polyline points="10 7 17 7 17 14" />
+                    </svg>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Dark Banner - Tilting Left (negative rotation) */}
+          <div className="absolute w-[120%] py-3 sm:py-4 bg-[#11141d] text-white font-extrabold tracking-widest text-xs uppercase shadow-[0_15px_35px_rgba(0,0,0,0.7)] transform -rotate-[2.5deg] z-20 border-y border-slate-800">
+            <div className="overflow-hidden w-full">
+              <div className="animate-marquee-right flex whitespace-nowrap gap-16 items-center">
+                {Array(12).fill(null).map((_, i) => (
+                  <div key={i} className="flex items-center gap-3 shrink-0 font-sans text-xs sm:text-sm font-black tracking-widest text-slate-100">
+                    <span>IMERSÃO CONSTRU 10X</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 sm:w-5 h-5 text-amber-400 shrink-0">
+                      <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                      <line x1="17" y1="7" x2="7" y2="17" />
+                      <polyline points="10 7 17 7 17 14" />
+                    </svg>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -523,7 +569,7 @@ export default function App() {
               onClick={handleOpenCheckout}
               className="px-8 py-4 bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-sm uppercase tracking-wider rounded-xl shadow-xl transition-all hover:scale-105 active:scale-95 inline-flex items-center gap-2"
             >
-              <span>GARANTIR VAGA NA IMERSÃO • 1º LOTE POR R$49,90</span>
+              <span>GARANTIR VAGA NA IMERSÃO • 1º LOTE POR R$27</span>
               <ArrowRight className="w-4 h-4" />
             </button>
           </div>
@@ -562,7 +608,7 @@ export default function App() {
             <div className="text-center mb-6">
               <div className="flex items-baseline justify-center gap-2">
                 <span className="text-5xl sm:text-6xl font-black text-white font-mono">
-                  R$ 49,90
+                  R$ 27
                 </span>
                 <span className="text-sm font-bold text-slate-300">à vista</span>
               </div>
@@ -593,7 +639,7 @@ export default function App() {
               id="btn-garantir-lote-1"
               className="w-full py-4.5 px-6 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-slate-950 font-black text-base sm:text-lg uppercase tracking-wider rounded-2xl shadow-xl shadow-amber-500/25 transition-transform hover:scale-105 active:scale-95 flex items-center justify-center gap-2 cursor-pointer"
             >
-              <span>GARANTIR INGRESSO • 1º LOTE R$ 49,90 À VISTA</span>
+              <span>GARANTIR INGRESSO • 1º LOTE R$ 27 À VISTA</span>
               <ArrowRight className="w-5 h-5 text-slate-950" />
             </button>
 
@@ -671,7 +717,7 @@ export default function App() {
               onClick={handleOpenCheckout}
               className="px-8 py-4 bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-sm uppercase tracking-wider rounded-xl shadow-xl transition-all hover:scale-105 active:scale-95 inline-flex items-center gap-2"
             >
-              <span>Garantir Meu Ingresso no 1º Lote (R$ 49,90 à vista)</span>
+              <span>Garantir Meu Ingresso no 1º Lote (R$ 27 à vista)</span>
               <ArrowRight className="w-4 h-4" />
             </button>
           </div>

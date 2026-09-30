@@ -44,7 +44,7 @@ export const FloatingCTA: React.FC<FloatingCTAProps> = ({ onCtaClick }) => {
               </span>
             </div>
             <p className="text-xs sm:text-sm text-slate-200 mt-0.5">
-              Por apenas <strong className="text-amber-400 font-extrabold text-sm sm:text-base">R$ 49,90 à vista</strong> • Inclui as 3 Aulas Imediatas
+              Por apenas <strong className="text-amber-400 font-extrabold text-sm sm:text-base">R$ 27 à vista</strong> • Inclui as 3 Aulas Imediatas
             </p>
           </div>
         </div>
