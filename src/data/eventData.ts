@@ -110,17 +110,6 @@ export const TESTIMONIALS: TestimonialCase[] = [
     metricValue: "R$ 0 (100% Orgânico)",
   },
   {
-    id: "thais",
-    name: "Eng. Thaís Coimbra",
-    role: "Especialista em Gestão Turn Key",
-    location: "Belo Horizonte - MG",
-    tag: "Obras de Alto Padrão",
-    result: "Mais de R$ 35 Milhões em obras gerenciadas",
-    story: "Depois de enfrentar uma das maiores crises de sua trajetória e dívidas de quase R$ 1 milhão, reergueu sua construtora focando em planejamento, orçamento à prova de furos e posicionamento no alto padrão através do modelo Turn Key.",
-    metricLabel: "Obras Gerenciadas",
-    metricValue: "+R$ 35 Milhões",
-  },
-  {
     id: "luana",
     name: "Eng. Luana & Felipe",
     role: "Construtora & Fiscalização",

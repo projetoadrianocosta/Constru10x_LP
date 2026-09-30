@@ -102,30 +102,36 @@ export default function App() {
           </div>
 
           {/* Big CTA Group */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-5 w-full">
+          <div className="flex flex-col items-center gap-3 mb-5 w-full max-w-xl mx-auto">
+            {/* Progress Bar */}
+            <div className="w-full flex flex-col gap-1.5 px-1 sm:px-0 mb-2">
+              <div className="flex items-center justify-between text-xs sm:text-sm">
+                <span className="text-slate-300 font-semibold flex items-center gap-1.5">
+                  <Flame className="w-4 h-4 text-amber-400 fill-amber-400" />
+                  Vagas preenchidas (1º lote quase esgotado)
+                </span>
+                <span className="text-amber-400 font-bold font-mono">92%</span>
+              </div>
+              <div className="w-full h-2.5 bg-slate-950 rounded-full overflow-hidden border border-slate-800">
+                <div 
+                  className="h-full bg-gradient-to-r from-amber-500 to-amber-400 rounded-full shadow-[0_0_12px_rgba(245,158,11,0.5)] transition-all duration-500" 
+                  style={{ width: '92%' }} 
+                />
+              </div>
+            </div>
+
             <button
               type="button"
               onClick={handleOpenCheckout}
               id="hero-cta-button"
-              className="w-full sm:w-auto px-10 py-4.5 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-slate-950 font-black text-base sm:text-lg uppercase tracking-wider rounded-2xl shadow-xl shadow-amber-500/25 transition-all hover:scale-105 active:scale-95 flex items-center justify-center gap-3 animate-pulse-glow"
+              className="w-full sm:w-auto whitespace-nowrap shrink-0 px-8 sm:px-12 py-4.5 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-slate-950 font-black text-xs sm:text-base uppercase tracking-wider rounded-2xl shadow-xl shadow-amber-500/25 transition-all hover:scale-105 active:scale-95 flex items-center justify-center gap-2.5 animate-pulse-glow"
             >
               <span>QUERO PARTICIPAR DA IMERSÃO POR R$27</span>
-              <ArrowRight className="w-5 h-5 text-slate-950" />
+              <ArrowRight className="w-4.5 h-4.5 sm:w-5 h-5 text-slate-950 shrink-0" />
             </button>
           </div>
 
-          {/* Urgency and Guarantees below CTA */}
-          <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-slate-400 text-center">
-            <span className="flex items-center gap-1.5 text-amber-300 font-semibold">
-              <Flame className="w-4 h-4 text-amber-400 fill-amber-400" />
-              82% das vagas preenchidas (subindo de lote em breve)
-            </span>
-            <span className="hidden sm:inline text-slate-700">•</span>
-            <span className="flex items-center gap-1.5 text-slate-300">
-              <ShieldCheck className="w-4 h-4 text-emerald-400" />
-              Garantia Incondicional Risco Zero
-            </span>
-          </div>
+
         </div>
       </section>
 
@@ -391,7 +397,7 @@ export default function App() {
           </div>
 
           {/* Testimonial Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {TESTIMONIALS.map((test) => (
               <div 
                 key={test.id} 
