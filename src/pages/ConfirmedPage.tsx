@@ -23,7 +23,7 @@ export default function ConfirmedPage() {
     <div className="min-h-screen bg-[#090b0e] text-[#F3F4F6] relative flex items-center justify-center px-4 py-16 selection:bg-amber-400 selection:text-slate-950">
       <div className="absolute inset-0 bg-grid-pattern opacity-40 pointer-events-none" />
 
-      <div className="relative z-10 w-full max-w-xl bg-gradient-to-b from-[#182338] via-[#121724] to-[#0e121a] border-2 border-amber-400 rounded-3xl p-8 sm:p-12 text-center shadow-2xl shadow-amber-500/20">
+      <div className="relative z-10 w-full max-w-xl glass-card glass-card-hot rounded-3xl p-8 sm:p-12 text-center">
         <div className="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 border-2 border-emerald-500 flex items-center justify-center mx-auto mb-5">
           <CheckCircle2 className="w-10 h-10" />
         </div>

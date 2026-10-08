@@ -15,7 +15,7 @@ export const RevenueCalculator: React.FC = () => {
   const growthMultiplier = "5.0";
 
   return (
-    <div className="bg-[#10141d] border border-amber-500/20 rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden" id="calculadora-constru10x">
+    <div className="glass-card glass-card-warm rounded-3xl p-6 sm:p-10 relative overflow-hidden" id="calculadora-constru10x">
       <div className="absolute top-0 right-0 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-600/5 rounded-full blur-3xl pointer-events-none" />
 
@@ -34,7 +34,7 @@ export const RevenueCalculator: React.FC = () => {
         </div>
 
         {/* Inputs */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 bg-[#0b0e14] p-5 sm:p-6 rounded-2xl border border-slate-800 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 glass-card glass-card-flat p-5 sm:p-6 rounded-2xl mb-8">
           <div>
             <div className="flex justify-between items-center mb-2">
               <label className="text-xs font-bold text-slate-300 uppercase tracking-wider">
@@ -89,7 +89,7 @@ export const RevenueCalculator: React.FC = () => {
         {/* Comparison Result Boxes */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-8">
           {/* Current reality */}
-          <div className="p-6 rounded-2xl bg-[#161a22] border border-red-500/30 relative">
+          <div className="p-6 rounded-2xl glass-card glass-card-danger glass-card-flat relative">
             <div className="flex items-center gap-2 text-red-400 text-xs font-bold uppercase tracking-wider mb-2">
               <AlertTriangle className="w-4 h-4" />
               <span>Seu Cenário Tradicional Atual</span>
@@ -116,7 +116,7 @@ export const RevenueCalculator: React.FC = () => {
           </div>
 
           {/* Constru10x reality */}
-          <div className="p-6 rounded-2xl bg-gradient-to-b from-[#182133] to-[#121926] border-2 border-amber-400/60 shadow-xl relative">
+          <div className="p-6 rounded-2xl glass-card glass-card-hot relative">
             <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
               <div className="flex items-center gap-2 text-amber-400 text-xs font-bold uppercase tracking-wider">
                 <TrendingUp className="w-4 h-4 shrink-0" />

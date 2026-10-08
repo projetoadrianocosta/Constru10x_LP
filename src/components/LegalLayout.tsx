@@ -27,7 +27,7 @@ export const LegalLayout: React.FC<LegalLayoutProps> = ({ title, updatedAt, chil
           Voltar para a página da imersão
         </a>
 
-        <div className="bg-[#121620] border border-slate-800 rounded-3xl p-6 sm:p-10">
+        <div className="glass-card rounded-3xl p-6 sm:p-10">
           <h1 className="text-3xl sm:text-4xl font-black text-white tracking-tight mb-2">{title}</h1>
           {updatedAt && <p className="text-xs text-slate-400 mb-8">Última atualização: {updatedAt}.</p>}
 

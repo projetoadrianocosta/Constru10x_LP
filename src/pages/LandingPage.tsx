@@ -84,7 +84,7 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
             alt="Imersão Constru 10X"
             width={1200}
             height={249}
-            className="w-[min(60vw,300px)] h-auto mb-16 sm:mb-20 animate-tag select-none"
+            className="w-[min(40vw,200px)] h-auto mb-16 sm:mb-20 animate-tag select-none"
             draggable={false}
           />
 
@@ -308,7 +308,7 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
             </div>
 
             {/* Caminho 2: O Método Constru10x */}
-            <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-b from-[#182338] to-[#121927] border-2 border-amber-400 shadow-2xl relative flex flex-col justify-between">
+            <div className="p-6 sm:p-8 rounded-3xl glass-card glass-card-hot relative flex flex-col justify-between">
               <div>
                 <div className="text-xs font-black uppercase tracking-wider text-amber-400 mb-2">
                   Caminho 2 • O Método Constru10x
@@ -337,7 +337,7 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
             
             {/* Foto Real de Adriano Costa */}
             <div className="lg:col-span-5 flex flex-col items-center">
-              <div className="w-full max-w-sm overflow-hidden rounded-2xl border-2 border-amber-400/40 bg-gradient-to-b from-[#151a24] to-[#0c0f14] shadow-2xl">
+              <div className="w-full max-w-sm overflow-hidden rounded-2xl glass-card glass-card-warm">
                 <img 
                   src={adrianoImg} 
                   alt="Eng. Adriano Costa" 
@@ -419,7 +419,7 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
                   </p>
                 </div>
 
-                <div className="pt-3 border-t border-slate-800/80 bg-[#000000] -mx-5 -mb-5 p-4 rounded-b-2xl">
+                <div className="pt-3 border-t border-white/10 bg-black/40 -mx-5 -mb-5 p-4 rounded-b-2xl">
                   <span className="text-[10px] text-slate-400 uppercase tracking-wider block font-sans">
                     {test.metricLabel}:
                   </span>
@@ -473,7 +473,7 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
           <LotsTimeline />
 
           {/* Offer Pricing Card */}
-          <div className="max-w-2xl mx-auto rounded-3xl p-6 sm:p-10 bg-gradient-to-b from-[#182338] via-[#121724] to-[#0e121a] border-2 border-amber-400 shadow-2xl shadow-amber-500/20 relative">
+          <div className="max-w-2xl mx-auto rounded-3xl p-6 sm:p-10 glass-card glass-card-hot relative">
 
             {/* Cabeçalho do card */}
             <div className="text-center mb-7">
@@ -555,7 +555,7 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
       {/* SEÇÃO 10 — GARANTIA */}
       <section id="garantia" className="py-16 sm:py-20 bg-[#000000]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-r from-[#121824] via-[#151d2e] to-[#121824] border-2 border-amber-400/40 rounded-3xl p-6 sm:p-10 shadow-2xl flex flex-col sm:flex-row items-center gap-6 sm:gap-8 text-center sm:text-left">
+          <div className="glass-card glass-card-warm rounded-3xl p-6 sm:p-10 flex flex-col sm:flex-row items-center gap-6 sm:gap-8 text-center sm:text-left">
             <div className="w-24 h-24 rounded-2xl bg-amber-400/10 border-2 border-amber-400/50 flex items-center justify-center text-amber-400 shrink-0 shadow-xl">
               <ShieldCheck className="w-14 h-14" />
             </div>

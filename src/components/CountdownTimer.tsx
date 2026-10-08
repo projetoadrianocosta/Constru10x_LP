@@ -64,31 +64,31 @@ export const CountdownTimer: React.FC<CountdownTimerProps> = ({
   }
 
   return (
-    <div className="inline-flex flex-col items-center bg-[#131822]/90 border border-amber-500/30 rounded-2xl p-4 sm:p-5 shadow-2xl backdrop-blur-md">
+    <div className="inline-flex flex-col items-center glass-card glass-card-warm rounded-2xl p-4 sm:p-5">
       <div className="flex items-center gap-2 mb-3 text-amber-400 text-xs sm:text-sm font-bold uppercase tracking-wider">
         <Clock className="w-4 h-4 animate-pulse" />
         <span>{headline}</span>
       </div>
       <div className="grid grid-cols-4 gap-2 sm:gap-3 text-center">
-        <div className="bg-[#090b0e] border border-slate-800 rounded-xl px-2 sm:px-4 py-2 min-w-[55px] sm:min-w-[72px]">
+        <div className="glass-card glass-card-flat rounded-xl px-2 sm:px-4 py-2 min-w-[55px] sm:min-w-[72px]">
           <span className="font-mono text-xl sm:text-2xl font-black text-amber-400 block leading-tight">
             {pad(timeLeft.days)}
           </span>
           <span className="text-[10px] text-slate-400 uppercase tracking-wider">Dias</span>
         </div>
-        <div className="bg-[#090b0e] border border-slate-800 rounded-xl px-2 sm:px-4 py-2 min-w-[55px] sm:min-w-[72px]">
+        <div className="glass-card glass-card-flat rounded-xl px-2 sm:px-4 py-2 min-w-[55px] sm:min-w-[72px]">
           <span className="font-mono text-xl sm:text-2xl font-black text-white block leading-tight">
             {pad(timeLeft.hours)}
           </span>
           <span className="text-[10px] text-slate-400 uppercase tracking-wider">Horas</span>
         </div>
-        <div className="bg-[#090b0e] border border-slate-800 rounded-xl px-2 sm:px-4 py-2 min-w-[55px] sm:min-w-[72px]">
+        <div className="glass-card glass-card-flat rounded-xl px-2 sm:px-4 py-2 min-w-[55px] sm:min-w-[72px]">
           <span className="font-mono text-xl sm:text-2xl font-black text-white block leading-tight">
             {pad(timeLeft.minutes)}
           </span>
           <span className="text-[10px] text-slate-400 uppercase tracking-wider">Min</span>
         </div>
-        <div className="bg-[#090b0e] border border-slate-800 rounded-xl px-2 sm:px-4 py-2 min-w-[55px] sm:min-w-[72px]">
+        <div className="glass-card glass-card-flat rounded-xl px-2 sm:px-4 py-2 min-w-[55px] sm:min-w-[72px]">
           <span className="font-mono text-xl sm:text-2xl font-black text-amber-400 block leading-tight">
             {pad(timeLeft.seconds)}
           </span>

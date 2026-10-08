@@ -50,6 +50,20 @@
   }
   .glass-card-warm { border-color: rgba(245, 158, 11, 0.35); }
   .glass-card-danger { --glow: 239, 68, 68; }
+  /* Destaque (oferta, lote atual, card principal): borda e brilho âmbar mais fortes. */
+  .glass-card-hot {
+    border-color: rgba(251, 191, 36, 0.65);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.28),
+      inset 0 0 32px rgba(var(--glow), 0.10),
+      0 0 40px -6px rgba(var(--glow), 0.35),
+      0 12px 40px rgba(0, 0, 0, 0.6);
+  }
+  /* Peças pequenas dentro de outro card: vidro sem sombra externa. */
+  .glass-card-flat,
+  .glass-card-flat:hover {
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16), inset 0 0 18px rgba(var(--glow), 0.05);
+  }
   .bg-radial-gradient {
     background: radial-gradient(circle at 50% 20%, rgba(245, 158, 11, 0.12) 0%, rgba(30, 58, 138, 0.08) 50%, transparent 80%);
   }

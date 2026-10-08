@@ -14,10 +14,10 @@ export const LotsTimeline: React.FC = () => {
         const isCompleted = lot.status === 'completed';
 
         const box = isActive
-          ? 'border-2 border-amber-400 bg-gradient-to-b from-[#182338] to-[#101520] shadow-xl shadow-amber-500/20 scale-105 z-10'
+          ? 'glass-card glass-card-hot scale-105 z-10'
           : isCompleted
-            ? 'border border-slate-800 bg-[#0e121a] opacity-50'
-            : 'border border-slate-700/80 bg-[#121620] opacity-80';
+            ? 'glass-card glass-card-flat opacity-50'
+            : 'glass-card opacity-80';
 
         const badge = isActive
           ? { text: 'LOTE ATUAL', cls: 'bg-amber-400 text-slate-950' }

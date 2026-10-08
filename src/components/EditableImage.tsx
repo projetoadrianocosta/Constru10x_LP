@@ -87,7 +87,7 @@ export const EditableImage: React.FC<EditableImageProps> = ({
   return (
     <>
       <div 
-        className={`relative group overflow-hidden rounded-2xl border border-amber-500/20 bg-gradient-to-b from-[#151a24] to-[#0c0f14] ${aspectClasses} ${className}`}
+        className={`relative group overflow-hidden rounded-2xl glass-card glass-card-warm ${aspectClasses} ${className}`}
         id={`editable-image-container-${id}`}
       >
         {imageSrc ? (
@@ -141,7 +141,7 @@ export const EditableImage: React.FC<EditableImageProps> = ({
       {/* Edit Image Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-fade-in">
-          <div className="relative w-full max-w-md bg-[#12161f] border border-amber-500/30 rounded-2xl p-6 shadow-2xl text-slate-100">
+          <div className="relative w-full max-w-md glass-card glass-card-warm rounded-2xl p-6 text-slate-100">
             <button
               onClick={() => setIsModalOpen(false)}
               className="absolute top-4 right-4 text-slate-400 hover:text-white p-1 rounded-lg hover:bg-white/10 transition-colors"
