@@ -73,7 +73,7 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
     <div className="min-h-screen bg-[#090b0e] text-[#F3F4F6] relative selection:bg-amber-400 selection:text-slate-950">
 
       {/* HERO SECTION */}
-      <section className="relative pt-20 pb-16 sm:pt-32 sm:pb-24 overflow-hidden bg-radial-gradient">
+      <section className="relative pt-20 pb-16 sm:pt-32 sm:pb-24 overflow-hidden bg-[#000000]">
         <div className="absolute inset-0 bg-grid-pattern opacity-40 pointer-events-none" />
         
         <div className="max-w-5xl mx-auto px-3 sm:px-6 lg:px-8 relative z-10 text-center flex flex-col items-center">
