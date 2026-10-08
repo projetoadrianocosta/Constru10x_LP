@@ -43,6 +43,7 @@ import { useCurrentLot } from '../lib/lots/useCurrentLot';
 import { LOTS } from '../lib/lots/config';
 import { formatLotDay } from '../lib/lots/helpers';
 import { bootTracking, trackPageView, trackViewContent } from '../lib/meta/events';
+import logoImg from '../assets/images/logo-constru10x.webp';
 import adrianoImg from '../assets/images/regenerated_image_1790213488705.webp';
 
 interface LandingPageProps {
@@ -72,16 +73,20 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
     <div className="min-h-screen bg-[#090b0e] text-[#F3F4F6] relative selection:bg-amber-400 selection:text-slate-950">
 
       {/* HERO SECTION */}
-      <section className="relative pt-10 pb-16 sm:pt-16 sm:pb-24 overflow-hidden bg-radial-gradient">
+      <section className="relative pt-20 pb-16 sm:pt-32 sm:pb-24 overflow-hidden bg-radial-gradient">
         <div className="absolute inset-0 bg-grid-pattern opacity-40 pointer-events-none" />
         
         <div className="max-w-5xl mx-auto px-3 sm:px-6 lg:px-8 relative z-10 text-center flex flex-col items-center">
           
-          {/* Destaque rápido */}
-          <div className="animate-tag text-amber-300 text-[13px] sm:text-[15px] font-semibold uppercase tracking-wide leading-snug mb-16 sm:mb-20">
-            <span className="block tag-shine">Para engenheiros, arquitetos</span>
-            <span className="block tag-shine">e construtoras</span>
-          </div>
+          {/* Logo da imersão */}
+          <img
+            src={logoImg}
+            alt="Imersão Constru 10X"
+            width={1200}
+            height={249}
+            className="w-[min(60vw,300px)] h-auto mb-16 sm:mb-20 animate-tag select-none"
+            draggable={false}
+          />
 
           {/* Headline */}
           <h1 
