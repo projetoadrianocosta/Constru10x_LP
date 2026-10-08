@@ -84,7 +84,7 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
             alt="Imersão Constru 10X"
             width={1200}
             height={249}
-            className="w-[min(40vw,200px)] h-auto mb-16 sm:mb-20 animate-tag select-none"
+            className="w-[min(48vw,240px)] h-auto mb-16 sm:mb-20 animate-tag select-none"
             draggable={false}
           />
 
@@ -163,7 +163,7 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
           </div>
 
           {/* Dark Banner - Tilting Left (negative rotation) */}
-          <div className="absolute w-[120%] py-3 sm:py-4 bg-[#11141d] text-white font-extrabold tracking-widest text-xs uppercase shadow-[0_15px_35px_rgba(0,0,0,0.7)] transform -rotate-[2.5deg] z-20 border-y border-slate-800">
+          <div className="absolute w-[120%] py-3 sm:py-4 bg-black text-white font-extrabold tracking-widest text-xs uppercase shadow-[0_15px_35px_rgba(0,0,0,0.7)] transform -rotate-[2.5deg] z-20 border-y border-slate-800">
             <div className="overflow-hidden w-full">
               <div className="animate-marquee-right flex whitespace-nowrap gap-16 items-center">
                 {Array(12).fill(null).map((_, i) => (
@@ -437,7 +437,7 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
               location="depoimentos"
               label={(l) => `GARANTIR VAGA NA IMERSÃO • ${l.ordinalLabel?.toUpperCase()}${l.price ? ` POR ${l.price}` : ''}`}
               iconClassName="w-4 h-4"
-              className="px-8 py-4 bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-sm uppercase tracking-wider rounded-xl shadow-xl transition-all hover:scale-105 active:scale-95 inline-flex items-center gap-2"
+              className="px-8 py-4 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-slate-950 font-black text-sm uppercase tracking-wider rounded-xl shadow-xl shadow-amber-500/25 transition-all hover:scale-105 active:scale-95 inline-flex items-center gap-2 animate-pulse-glow"
             />
           </div>
         </div>
@@ -452,8 +452,7 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
 
       {/* SEÇÃO 9 — OFERTA / LOTE VIGENTE */}
       <section id="oferta" className="py-16 sm:py-24 bg-[#000000] border-y border-slate-800 relative overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-amber-500/5 rounded-full blur-[140px] pointer-events-none" />
-
+        
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           
           {/* Selo */}
@@ -541,7 +540,7 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
               id="btn-garantir-ingresso"
               label={(l) => `GARANTIR INGRESSO • ${l.ordinalLabel?.toUpperCase()}${l.price ? ` ${l.price} À VISTA` : ''}`}
               iconClassName="w-5 h-5 text-slate-950"
-              className="w-full py-4.5 px-6 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-slate-950 font-black text-base sm:text-lg uppercase tracking-wider rounded-2xl shadow-xl shadow-amber-500/25 transition-transform hover:scale-105 active:scale-95 flex items-center justify-center gap-2 cursor-pointer"
+              className="w-full py-4.5 px-6 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-slate-950 font-black text-base sm:text-lg uppercase tracking-wider rounded-2xl shadow-xl shadow-amber-500/25 transition-all hover:scale-105 active:scale-95 flex items-center justify-center gap-2 cursor-pointer animate-pulse-glow"
             />
 
             <p className="text-[11px] text-center text-slate-400 mt-3">
@@ -617,7 +616,7 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
               location="faq"
               label={(l) => `Garantir Meu Ingresso no ${l.ordinalLabel}${l.price ? ` (${l.price} à vista)` : ''}`}
               iconClassName="w-4 h-4"
-              className="px-8 py-4 bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-sm uppercase tracking-wider rounded-xl shadow-xl transition-all hover:scale-105 active:scale-95 inline-flex items-center gap-2"
+              className="px-8 py-4 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-slate-950 font-black text-sm uppercase tracking-wider rounded-xl shadow-xl shadow-amber-500/25 transition-all hover:scale-105 active:scale-95 inline-flex items-center gap-2 animate-pulse-glow"
             />
           </div>
         </div>

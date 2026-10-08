@@ -33,7 +33,7 @@ export const FloatingCTA: React.FC = () => {
   return (
     <div 
       id="floating-cta-bar"
-      className="fixed bottom-0 left-0 right-0 z-40 bg-[#0c0f15]/95 border-t border-amber-500/30 backdrop-blur-xl shadow-[0_-10px_35px_rgba(0,0,0,0.7)] py-3 px-4 transition-transform duration-300 transform translate-y-0"
+      className="fixed bottom-0 left-0 right-0 z-40 bg-black/95 border-t border-amber-500/30 backdrop-blur-xl shadow-[0_-10px_35px_rgba(0,0,0,0.7)] py-3 px-4 transition-transform duration-300 transform translate-y-0"
     >
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2.5 sm:gap-4">
         <div className="flex items-center gap-3 text-center sm:text-left">

@@ -20,7 +20,7 @@ export default function ConfirmedPage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#090b0e] text-[#F3F4F6] relative flex items-center justify-center px-4 py-16 selection:bg-amber-400 selection:text-slate-950">
+    <div className="min-h-screen bg-black text-[#F3F4F6] relative flex items-center justify-center px-4 py-16 selection:bg-amber-400 selection:text-slate-950">
       <div className="absolute inset-0 bg-grid-pattern opacity-40 pointer-events-none" />
 
       <div className="relative z-10 w-full max-w-xl glass-card glass-card-hot rounded-3xl p-8 sm:p-12 text-center">

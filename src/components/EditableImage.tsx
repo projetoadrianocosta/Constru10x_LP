@@ -99,7 +99,7 @@ export const EditableImage: React.FC<EditableImageProps> = ({
           />
         ) : (
           <div className="w-full h-full flex flex-col items-center justify-center p-6 text-center bg-grid-pattern relative">
-            <div className="absolute inset-0 bg-gradient-to-t from-[#090b0e] via-transparent to-transparent opacity-80" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80" />
             
             {/* Visual Placeholder for Adriano */}
             <div className="relative z-10 flex flex-col items-center">

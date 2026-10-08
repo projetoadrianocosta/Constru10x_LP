@@ -17,7 +17,7 @@ export const LegalLayout: React.FC<LegalLayoutProps> = ({ title, updatedAt, chil
   }, [title]);
 
   return (
-    <div className="min-h-screen bg-[#090b0e] text-[#F3F4F6] selection:bg-amber-400 selection:text-slate-950">
+    <div className="min-h-screen bg-black text-[#F3F4F6] selection:bg-amber-400 selection:text-slate-950">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
         <a
           href="/"

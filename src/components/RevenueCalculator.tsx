@@ -161,7 +161,7 @@ export const RevenueCalculator: React.FC = () => {
             id="btn-calculator-cta"
             label="Quero aprender o método para faturar 10x mais"
             iconClassName="w-5 h-5"
-            className="inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base sm:text-lg font-black uppercase tracking-wider text-slate-950 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 hover:from-amber-300 hover:to-amber-400 rounded-xl shadow-xl shadow-amber-500/25 hover:shadow-amber-500/40 hover:scale-[1.02] active:scale-[0.99] transition-all duration-200"
+            className="inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base sm:text-lg font-black uppercase tracking-wider text-slate-950 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 hover:from-amber-300 hover:to-amber-400 rounded-xl shadow-xl shadow-amber-500/25 transition-all hover:scale-105 active:scale-95 animate-pulse-glow"
           />
         </div>
       </div>
