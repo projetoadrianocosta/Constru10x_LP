@@ -70,7 +70,7 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
   };
 
   return (
-    <div className="min-h-screen bg-[#090b0e] text-[#F3F4F6] relative selection:bg-amber-400 selection:text-slate-950">
+    <div className="min-h-screen bg-[#000000] text-[#F3F4F6] relative selection:bg-amber-400 selection:text-slate-950">
 
       {/* HERO SECTION */}
       <section className="relative pt-20 pb-16 sm:pt-32 sm:pb-24 overflow-hidden bg-[#000000]">
@@ -138,7 +138,7 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
       </section>
 
       {/* SEÇÃO VISOR / TICKER REVELAÇÃO (MOVIMENTOS INFINITOS E CRUZADOS) */}
-      <section className="relative h-28 sm:h-36 overflow-hidden bg-[#090b0e] z-20 flex items-center justify-center border-y border-slate-900">
+      <section className="relative h-28 sm:h-36 overflow-hidden bg-[#000000] z-20 flex items-center justify-center border-y border-slate-900">
         <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black pointer-events-none z-30" />
         
         {/* Ribbon container to hold both overlapping banners */}
@@ -184,7 +184,7 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
       </section>
 
       {/* SEÇÃO 2 — DATA E O QUE VOCÊ VAI SAIR COM */}
-      <section className="py-16 sm:py-24 bg-[#0d1017] border-y border-slate-800">
+      <section className="py-16 sm:py-24 bg-[#000000] border-y border-slate-800">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-14">
             <span className="text-xs font-black uppercase tracking-widest text-amber-400 bg-amber-500/10 px-3.5 py-1 rounded-full border border-amber-500/30 mb-3 inline-block">
@@ -238,7 +238,7 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
       </section>
 
       {/* SEÇÃO 4 — PARA QUEM É */}
-      <section id="para-quem-e" className="py-16 sm:py-24 bg-[#0d1017] border-y border-slate-800 relative">
+      <section id="para-quem-e" className="py-16 sm:py-24 bg-[#000000] border-y border-slate-800 relative">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-[#121620] border-2 border-amber-500/40 rounded-3xl p-6 sm:p-10 shadow-xl relative overflow-hidden">
             <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-2xl pointer-events-none" />
@@ -275,7 +275,7 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
       </section>
 
       {/* SEÇÃO 5 — OS DOIS CAMINHOS */}
-      <section className="py-16 sm:py-24 bg-[#0c0f16] border-t border-slate-800">
+      <section className="py-16 sm:py-24 bg-[#000000] border-t border-slate-800">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-14">
             <span className="text-xs font-black uppercase tracking-widest text-amber-400 bg-amber-500/10 px-3.5 py-1 rounded-full border border-amber-500/30 mb-3 inline-block">
@@ -331,7 +331,7 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
       </section>
 
       {/* SEÇÃO 6 — QUEM É O ADRIANO */}
-      <section id="quem-e-adriano" className="py-16 sm:py-24 bg-[#0c0f16] border-t border-slate-800">
+      <section id="quem-e-adriano" className="py-16 sm:py-24 bg-[#000000] border-t border-slate-800">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
             
@@ -387,7 +387,7 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
       </section>
 
       {/* SEÇÃO 7 — PROVA SOCIAL / CASES */}
-      <section id="resultados" className="py-16 sm:py-24 bg-[#090b0e] relative overflow-hidden">
+      <section id="resultados" className="py-16 sm:py-24 bg-[#000000] relative overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-14">
             <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight">
@@ -419,7 +419,7 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
                   </p>
                 </div>
 
-                <div className="pt-3 border-t border-slate-800/80 bg-[#0c0f16] -mx-5 -mb-5 p-4 rounded-b-2xl">
+                <div className="pt-3 border-t border-slate-800/80 bg-[#000000] -mx-5 -mb-5 p-4 rounded-b-2xl">
                   <span className="text-[10px] text-slate-400 uppercase tracking-wider block font-sans">
                     {test.metricLabel}:
                   </span>
@@ -444,14 +444,14 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
       </section>
 
       {/* SEÇÃO 8 — SIMULADOR DE FATURAMENTO TÉCNICO */}
-      <section className="py-16 sm:py-24 bg-[#090b0e] border-t border-slate-800/80">
+      <section className="py-16 sm:py-24 bg-[#000000] border-t border-slate-800/80">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <RevenueCalculator />
         </div>
       </section>
 
       {/* SEÇÃO 9 — OFERTA / LOTE VIGENTE */}
-      <section id="oferta" className="py-16 sm:py-24 bg-[#0c0f16] border-y border-slate-800 relative overflow-hidden">
+      <section id="oferta" className="py-16 sm:py-24 bg-[#000000] border-y border-slate-800 relative overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-amber-500/5 rounded-full blur-[140px] pointer-events-none" />
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -553,7 +553,7 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
       </section>
 
       {/* SEÇÃO 10 — GARANTIA */}
-      <section id="garantia" className="py-16 sm:py-20 bg-[#0d1017]">
+      <section id="garantia" className="py-16 sm:py-20 bg-[#000000]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-gradient-to-r from-[#121824] via-[#151d2e] to-[#121824] border-2 border-amber-400/40 rounded-3xl p-6 sm:p-10 shadow-2xl flex flex-col sm:flex-row items-center gap-6 sm:gap-8 text-center sm:text-left">
             <div className="w-24 h-24 rounded-2xl bg-amber-400/10 border-2 border-amber-400/50 flex items-center justify-center text-amber-400 shrink-0 shadow-xl">
@@ -572,7 +572,7 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
       </section>
 
       {/* SEÇÃO 11 — FAQ */}
-      <section id="faq" className="py-16 sm:py-24 bg-[#090b0e] border-t border-slate-800">
+      <section id="faq" className="py-16 sm:py-24 bg-[#000000] border-t border-slate-800">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <span className="text-xs font-black uppercase tracking-widest text-amber-400 bg-amber-500/10 px-3.5 py-1 rounded-full border border-amber-500/30 mb-3 inline-block">
@@ -624,7 +624,7 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
       </section>
 
       {/* FOOTER */}
-      <footer className="py-12 bg-[#06080b] border-t border-slate-800/80 text-xs text-slate-500 text-center pb-24 sm:pb-16">
+      <footer className="py-12 bg-[#000000] border-t border-slate-800/80 text-xs text-slate-500 text-center pb-24 sm:pb-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
           <div className="flex items-center justify-center gap-2 text-slate-300 font-bold text-sm">
             <span>Adriano Costa Engenheiro</span>
