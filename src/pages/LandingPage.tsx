@@ -40,6 +40,8 @@ import { BuyButton } from '../components/BuyButton';
 import { LotsTimeline } from '../components/LotsTimeline';
 import { FloatingCTA } from '../components/FloatingCTA';
 import { useCurrentLot } from '../lib/lots/useCurrentLot';
+import { LOTS } from '../lib/lots/config';
+import { formatLotDay } from '../lib/lots/helpers';
 import { bootTracking, trackPageView, trackViewContent } from '../lib/meta/events';
 import adrianoImg from '../assets/images/regenerated_image_1790213488705.webp';
 
@@ -60,6 +62,7 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
   }, []);
 
   const ordinal = lot.ordinalLabel ?? '';
+  const nextLot = LOTS.find((l) => lot.lot !== null && l.number === lot.lot + 1);
 
   const toggleFaq = (index: number) => {
     setOpenFaqIndex(openFaqIndex === index ? null : index);
@@ -72,61 +75,58 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
       <section className="relative pt-10 pb-16 sm:pt-16 sm:pb-24 overflow-hidden bg-radial-gradient">
         <div className="absolute inset-0 bg-grid-pattern opacity-40 pointer-events-none" />
         
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center flex flex-col items-center">
+        <div className="max-w-5xl mx-auto px-3 sm:px-6 lg:px-8 relative z-10 text-center flex flex-col items-center">
           
-          {/* Microcopy */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-950/60 border border-blue-500/40 text-blue-300 font-bold uppercase tracking-wider mb-6 backdrop-blur-sm">
-            <Calendar className="w-4 h-4 text-blue-400" />
-            <span className="text-[12px]">Dia 07 de Novembro, online e ao vivo das 10 às 17h</span>
+          {/* Destaque rápido */}
+          <div className="animate-tag text-amber-300 text-[13px] sm:text-[15px] font-semibold uppercase tracking-wide leading-snug mb-16 sm:mb-20">
+            <span className="block tag-shine">Para engenheiros, arquitetos</span>
+            <span className="block tag-shine">e construtoras</span>
           </div>
 
           {/* Headline */}
           <h1 
-            style={{ fontSize: '53px', width: '738px', maxWidth: '100%' }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-[53px] font-black text-white leading-[1.14] tracking-tight mb-6 max-w-4xl mx-auto"
+            style={{ width: '960px', maxWidth: '100%', fontFamily: "'Montserrat', 'Plus Jakarta Sans', sans-serif", fontWeight: 900 }}
+            className="text-[min(9.4vw,42px)] sm:text-4xl md:text-[52px] lg:text-[68px] font-black uppercase text-white text-glow-white leading-[1.12] tracking-tight mb-7 sm:mb-8 max-w-5xl mx-auto"
           >
-            Aumente seu <span className="text-amber-400">faturamento em até 10x</span> sem precisar trabalhar 14h por dia
+            <span className="block sm:inline">Você vai</span>{' '}
+            <span className="block sm:inline">aumentar o seu</span>{' '}
+            <span className="block sm:inline text-amber-400 text-glow-amber">faturamento</span>{' '}
+            <span className="block sm:inline text-amber-400 text-glow-amber">em até 10x</span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-base sm:text-lg md:text-xl text-slate-300 font-medium leading-relaxed mb-6 max-w-3xl mx-auto">
-            Em um dia de imersão, eu vou te entregar um plano de crescimento pronto para executar e fechar <span className="text-amber-400 font-semibold">no mínimo 30 mil por mês em contratos</span>.
+          <p className="text-[17px] sm:text-lg md:text-xl text-white font-medium leading-[1.7] text-pretty mb-16 sm:mb-[75px] max-w-2xl mx-auto">
+            Com o passo a passo que me faz <span className="text-amber-400 font-semibold text-glow-amber">faturar<br />+ de 1M de reais todos os anos</span>. E na imersão Constru 10x eu vou te entregar esse plano pronto. Para você iniciar ainda esse ano com <span className="text-amber-400 font-semibold text-glow-amber">projetos maiores e mais previsibilidade sobre as suas vendas</span>.
           </p>
 
-          {/* Destaque rápido */}
-          <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-400/10 border border-amber-400/20 text-amber-300 text-xs sm:text-sm font-bold uppercase tracking-widest mb-8">
-            <Users className="w-4 h-4 text-amber-400" />
-            <span>PARA ENGENHEIROS, ARQUITETOS E CONSTRUTORAS</span>
-          </div>
-
           {/* Big CTA Group */}
-          <div className="flex flex-col items-center gap-3 mb-5 w-full max-w-xl mx-auto">
-            {/* Progress Bar */}
-            <div className="w-full flex flex-col gap-1.5 px-1 sm:px-0 mb-2">
-              <div className="flex items-center justify-between text-xs sm:text-sm">
-                <span className="text-slate-300 font-semibold flex items-center gap-1.5">
-                  <Flame className="w-4 h-4 text-amber-400 fill-amber-400" />
-                  Vagas preenchidas ({lot.isActive ? `${ordinal.toLowerCase()} quase esgotado` : 'inscrições encerradas'})
-                </span>
-                <span className="text-amber-400 font-bold font-mono">92%</span>
-              </div>
-              <div className="w-full h-2.5 bg-slate-950 rounded-full overflow-hidden border border-slate-800">
-                <div 
-                  className="h-full bg-gradient-to-r from-amber-500 to-amber-400 rounded-full shadow-[0_0_12px_rgba(245,158,11,0.5)] transition-all duration-500" 
-                  style={{ width: '92%' }} 
-                />
-              </div>
+          <div className="flex flex-col items-center gap-6 mb-5 w-full max-w-2xl mx-auto">
+            {/* Urgência: virada do lote */}
+            <div className="flex items-center justify-center gap-1.5 text-xs sm:text-sm text-slate-300 font-semibold mb-3">
+              <Flame className="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" />
+              <span>
+                {!lot.isActive
+                  ? 'Inscrições encerradas'
+                  : nextLot
+                    ? <>O {ordinal.toLowerCase()} vai virar em <span className="text-amber-400 font-bold">{formatLotDay(nextLot.start)}</span>, garanta a sua participação!</>
+                    : <>Último lote: as inscrições encerram em <span className="text-amber-400 font-bold">{formatLotDay(lot.endsAt!)}</span>, garanta a sua participação!</>}
+              </span>
             </div>
 
             {/* CTA do topo: rola até a seção de oferta (não vai direto ao checkout) */}
             <a
               href="#oferta"
               id="hero-cta-button"
-              className="w-full sm:w-auto whitespace-nowrap shrink-0 px-8 sm:px-12 py-4.5 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-slate-950 font-black text-xs sm:text-base uppercase tracking-wider rounded-2xl shadow-xl shadow-amber-500/25 transition-all hover:scale-105 active:scale-95 flex items-center justify-center gap-2.5 animate-pulse-glow no-underline"
+              className="w-full sm:w-auto sm:whitespace-nowrap shrink-0 px-5 sm:px-12 py-4.5 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-slate-950 font-black text-[15px] sm:text-base md:text-lg leading-tight text-center uppercase tracking-wide rounded-2xl shadow-xl shadow-amber-500/25 transition-all hover:scale-105 active:scale-95 flex items-center justify-center gap-2.5 animate-pulse-glow no-underline"
             >
-              <span>{lot.isActive ? `QUERO PARTICIPAR DA IMERSÃO${lot.price ? ` POR ${lot.price}` : ''}` : 'INSCRIÇÕES ENCERRADAS'}</span>
+              <span>{lot.isActive ? `GARANTIR MEU INGRESSO${lot.price ? ` POR ${lot.price}` : ''}` : 'INSCRIÇÕES ENCERRADAS'}</span>
               <ArrowRight className="w-4.5 h-4.5 sm:w-5 h-5 text-slate-950 shrink-0" />
             </a>
+
+            {/* Data do evento */}
+            <div className="text-slate-200 text-[min(2.7vw,12px)] sm:text-[12px] font-semibold uppercase leading-snug text-center whitespace-nowrap -mt-3">
+              Dia 07 de Novembro, online e ao vivo das 10 às 17h
+            </div>
           </div>
 
 
