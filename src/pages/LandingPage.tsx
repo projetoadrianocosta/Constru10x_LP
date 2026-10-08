@@ -113,15 +113,14 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
               </span>
             </div>
 
-            {/* CTA do topo: rola até a seção de oferta (não vai direto ao checkout) */}
-            <a
-              href="#oferta"
+            {/* CTA do topo: vai direto ao checkout do lote vigente */}
+            <BuyButton
+              location="hero"
               id="hero-cta-button"
-              className="w-full sm:w-auto sm:whitespace-nowrap shrink-0 px-5 sm:px-12 py-4.5 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-slate-950 font-black text-[15px] sm:text-base md:text-lg leading-tight text-center uppercase tracking-wide rounded-2xl shadow-xl shadow-amber-500/25 transition-all hover:scale-105 active:scale-95 flex items-center justify-center gap-2.5 animate-pulse-glow no-underline"
-            >
-              <span>{lot.isActive ? `GARANTIR MEU INGRESSO${lot.price ? ` POR ${lot.price}` : ''}` : 'INSCRIÇÕES ENCERRADAS'}</span>
-              <ArrowRight className="w-4.5 h-4.5 sm:w-5 h-5 text-slate-950 shrink-0" />
-            </a>
+              label={(l) => `GARANTIR MEU INGRESSO${l.price ? ` POR ${l.price}` : ''}`}
+              iconClassName="w-4.5 h-4.5 sm:w-5 h-5 text-slate-950 shrink-0"
+              className="w-full sm:w-auto sm:whitespace-nowrap shrink-0 px-5 sm:px-12 py-4.5 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-slate-950 font-black text-[15px] sm:text-base md:text-lg leading-tight text-center uppercase tracking-wide rounded-2xl shadow-xl shadow-amber-500/25 transition-all hover:scale-105 active:scale-95 flex items-center justify-center gap-2.5 animate-pulse-glow"
+            />
 
             {/* Data do evento */}
             <div className="text-slate-200 text-[min(2.7vw,12px)] sm:text-[12px] font-semibold uppercase leading-snug text-center whitespace-nowrap -mt-3">
