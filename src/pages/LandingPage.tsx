@@ -200,7 +200,7 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
 
           {/* 3 caixas de destaque (máx 2 linhas cada) */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-            <div className="bg-[#121620] border-2 border-slate-800 hover:border-amber-400/40 rounded-2xl p-6 transition-all shadow-lg flex flex-col">
+            <div className="glass-card rounded-2xl p-6 flex flex-col">
               <div className="w-10 h-10 rounded-xl bg-amber-400/10 text-amber-400 border border-amber-400/30 flex items-center justify-center font-black text-sm mb-4">
                 1
               </div>
@@ -209,7 +209,7 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
               </p>
             </div>
 
-            <div className="bg-[#121620] border-2 border-slate-800 hover:border-amber-400/40 rounded-2xl p-6 transition-all shadow-lg flex flex-col">
+            <div className="glass-card rounded-2xl p-6 flex flex-col">
               <div className="w-10 h-10 rounded-xl bg-amber-400/10 text-amber-400 border border-amber-400/30 flex items-center justify-center font-black text-sm mb-4">
                 2
               </div>
@@ -218,7 +218,7 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
               </p>
             </div>
 
-            <div className="bg-[#121620] border-2 border-slate-800 hover:border-amber-400/40 rounded-2xl p-6 transition-all shadow-lg flex flex-col">
+            <div className="glass-card rounded-2xl p-6 flex flex-col">
               <div className="w-10 h-10 rounded-xl bg-amber-400/10 text-amber-400 border border-amber-400/30 flex items-center justify-center font-black text-sm mb-4">
                 3
               </div>
@@ -229,7 +229,7 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
           </div>
 
           {/* Linha complementar */}
-          <div className="text-center p-4 bg-[#121620]/40 border border-slate-800/80 rounded-2xl max-w-3xl mx-auto">
+          <div className="text-center p-4 glass-card rounded-2xl max-w-3xl mx-auto">
             <p className="text-xs sm:text-sm text-slate-400 font-semibold">
               Conteúdo 100% prático, com espaço para tirar dúvidas ao vivo. <span className="text-amber-400">Atenção: o evento não terá replay.</span>
             </p>
@@ -240,7 +240,7 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
       {/* SEÇÃO 4 — PARA QUEM É */}
       <section id="para-quem-e" className="py-16 sm:py-24 bg-[#000000] border-y border-slate-800 relative">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-[#121620] border-2 border-amber-500/40 rounded-3xl p-6 sm:p-10 shadow-xl relative overflow-hidden">
+          <div className="glass-card glass-card-warm rounded-3xl p-6 sm:p-10 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-2xl pointer-events-none" />
             
             <div className="flex items-center gap-3 mb-6 border-b border-slate-800 pb-4">
@@ -288,7 +288,7 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Caminho 1: O Tradicional da Sobrevivência */}
-            <div className="p-6 sm:p-8 rounded-3xl bg-[#141822] border border-red-500/25 relative flex flex-col justify-between">
+            <div className="p-6 sm:p-8 rounded-3xl glass-card glass-card-danger relative flex flex-col justify-between">
               <div>
                 <div className="text-xs font-black uppercase tracking-wider text-red-400 mb-2">
                   Caminho 1 • O Padrão Comum
@@ -363,19 +363,19 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
 
               {/* Bloco de números (destaque) */}
               <div className="grid grid-cols-2 gap-4 pt-4 border-t border-slate-800">
-                <div className="p-3.5 rounded-xl bg-[#121620] border border-slate-800">
+                <div className="p-3.5 rounded-xl glass-card">
                   <span className="text-xs text-slate-400 block mb-0.5 uppercase tracking-wide">Investimento:</span>
                   <span className="text-base sm:text-lg font-black text-white font-mono block">R$ 16.000</span>
                 </div>
-                <div className="p-3.5 rounded-xl bg-[#121620] border border-slate-800">
+                <div className="p-3.5 rounded-xl glass-card">
                   <span className="text-xs text-slate-400 block mb-0.5 uppercase tracking-wide">Contratos Fechados:</span>
                   <span className="text-base sm:text-lg font-black text-emerald-400 font-mono block">R$ 560.000</span>
                 </div>
-                <div className="p-3.5 rounded-xl bg-[#121620] border border-slate-800">
+                <div className="p-3.5 rounded-xl glass-card">
                   <span className="text-xs text-slate-400 block mb-0.5 uppercase tracking-wide">Retorno sobre Investimento:</span>
                   <span className="text-base sm:text-lg font-black text-amber-400 font-mono block">35 vezes (ROI)</span>
                 </div>
-                <div className="p-3.5 rounded-xl bg-[#121620] border border-slate-800">
+                <div className="p-3.5 rounded-xl glass-card">
                   <span className="text-xs text-slate-400 block mb-0.5 uppercase tracking-wide">Comunidade:</span>
                   <span className="text-base sm:text-lg font-black text-white font-mono block">+170k no Instagram</span>
                 </div>
@@ -403,7 +403,7 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
             {TESTIMONIALS.map((test) => (
               <div 
                 key={test.id} 
-                className="bg-[#111620] border border-slate-800 hover:border-amber-400/40 rounded-2xl p-5 flex flex-col justify-between transition-all hover:translate-y-[-2px] shadow-lg"
+                className="glass-card rounded-2xl p-5 flex flex-col justify-between hover:translate-y-[-2px]"
               >
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-3">
@@ -589,7 +589,7 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
               return (
                 <div 
                   key={idx}
-                  className="bg-[#111620] border border-slate-800 rounded-2xl overflow-hidden transition-colors"
+                  className="glass-card rounded-2xl overflow-hidden"
                 >
                   <button
                     type="button"
