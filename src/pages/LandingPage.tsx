@@ -39,6 +39,7 @@ import { RevenueCalculator } from '../components/RevenueCalculator';
 import { BuyButton } from '../components/BuyButton';
 import { LotsTimeline } from '../components/LotsTimeline';
 import { FloatingCTA } from '../components/FloatingCTA';
+import { LotBanner } from '../components/LotBanner';
 import { useCurrentLot } from '../lib/lots/useCurrentLot';
 import { LOTS } from '../lib/lots/config';
 import { formatLotDay } from '../lib/lots/helpers';
@@ -72,8 +73,10 @@ export default function LandingPage({ trafficSource }: LandingPageProps) {
   return (
     <div className="min-h-screen bg-[#000000] text-[#F3F4F6] relative selection:bg-amber-400 selection:text-slate-950">
 
+      <LotBanner />
+
       {/* HERO SECTION */}
-      <section className="relative pt-20 pb-16 sm:pt-32 sm:pb-24 overflow-hidden bg-[#000000]">
+      <section className="relative pt-14 pb-16 sm:pt-24 sm:pb-24 overflow-hidden bg-[#000000]">
         <div className="absolute inset-0 bg-grid-pattern opacity-40 pointer-events-none" />
         
         <div className="max-w-5xl mx-auto px-3 sm:px-6 lg:px-8 relative z-10 text-center flex flex-col items-center">
