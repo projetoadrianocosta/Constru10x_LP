@@ -38,7 +38,7 @@ export const LotBanner: React.FC = () => {
 
   const totalSeconds = Math.floor(remaining / 1000);
   const days = Math.floor(totalSeconds / 86400);
-  const hours = Math.floor((totalSeconds % 86400) / 3600);
+  const hours = Math.floor(totalSeconds / 3600);
   const minutes = Math.floor((totalSeconds % 3600) / 60);
   const seconds = totalSeconds % 60;
 
@@ -60,8 +60,7 @@ export const LotBanner: React.FC = () => {
                 className="font-black tabular-nums tracking-wider whitespace-nowrap text-base sm:text-xl"
                 aria-label="Tempo restante do lote"
               >
-                {days > 0 && <>{pad(days)} : </>}
-                {pad(hours)} : {pad(minutes)} : {pad(seconds)}
+                {days >= 2 ? `${days} dias` : `${pad(hours)} : ${pad(minutes)} : ${pad(seconds)}`}
               </span>
             </div>
             <span className="self-stretch w-px bg-white/50" aria-hidden="true" />
